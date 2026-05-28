@@ -1,7 +1,7 @@
 {
   "name": "openai-curated",
   "interface": {
-    "displayName": "Codex official"
+    "displayName": "yikusiel-codex-marketplace"
   },
   "plugins": [
     {
