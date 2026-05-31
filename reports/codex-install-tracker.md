@@ -1,23 +1,27 @@
 # Codex Install Tracker — first safe batch (15 plugins)
 
-Install these in order in Codex (Plugins → `yikusiel-codex-marketplace` → `+`). All are **zero-config, no account, low risk**. After installing each, run its **test prompt** and check the **expected result**, then mark **Install status** (e.g., `Installed ✓` / `Works ✓` / `Issue`). Machine-readable copy: `codex-install-tracker.csv`.
+Install in order (Codex → Plugins → `yikusiel-codex-marketplace` → `+`). All are **zero-config, no account, low risk**. Run each plugin's **test prompt + expected result** from `reports/post-install-test-checklist.md`, then update this status table. Full machine-readable record (with prompts): `codex-install-tracker.csv`.
 
-| # | Plugin | Category | Why | Account/API | Risk | Test prompt | Expected result | Status | Notes |
+**Status table** — edit `Installed?`, `Tested?`, `Result`, `Issue found`, `Next action` as you go:
+
+| # | Plugin | Category | Account/API | Risk | Installed? | Tested? | Result | Issue found | Next action |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | `writers-loop` | Writing | Core structured writing engine (frame→draft→revise) | No | Low | Plan and draft a 150-word intro for a Chase Sapphire Preferred review using a frame, draft, then revise pass. | A structured draft with a visible plan + critique/revise step, in your voice. | Not installed |  |
-| 2 | `unslop` | Writing | Removes AI-sounding wording | No | Low | Rewrite this paragraph to sound like a human professional editor without changing any facts: <paste paragraph> | Cleaner, natural writing; no invented facts; your meaning preserved. | Not installed | Run last on near-final drafts |
-| 3 | `claude-mem` | Memory & Context | Persistent memory across sessions | No | Low | Remember: The Cards Guy covers U.S. credit cards only and uses a human expert tone. Later, recall my content rules. | It stores the rule and recalls it in a later task. | Not installed |  |
-| 4 | `pm-skills` | Project Management | 63 PM skills for planning | No | Low | Create a lightweight product plan for a new 'best travel cards 2026' page: goals, scope, tasks, risks. | A structured plan (goals/scope/tasks/risks). | Not installed |  |
-| 5 | `agentops` | Agent Orchestration | Operational layer + workflow skills | No | Low | Set up a research → draft → validate → ship workflow for a card-page refresh and track progress. | A staged workflow with validation gates and repo-native notes. | Not installed | Stores notes in .agents/ of your project |
-| 6 | `session-orchestrator` | Agent Orchestration | Quality-gated session lifecycle | No | Low | Break 'refresh the Amex Gold page' into a research-plan-execute-close session with quality gates. | A phased plan with review gates between waves. | Not installed |  |
-| 7 | `microsoft-docs` | Documentation | Authoritative MS/Azure/.NET docs search | No | Low | Find the official Microsoft docs for Azure OpenAI image generation quotas. | Cites Microsoft Learn docs; no hallucinated details. | Not installed | Zero-config, Microsoft-hosted |
-| 8 | `citecheck` | Research & Fact-Checking | Verify citations/sources exist + are relevant | No | Low | Check whether these two sources exist and are relevant to a claim about average credit-card APRs: <paste sources> | Confirms existence/relevance against Crossref/Semantic Scholar/etc. | Not installed | Great for finance fact-checking |
-| 9 | `github-librarian` | Research | Research repos, SDKs, libraries | No | Low | Find well-maintained React table libraries with TypeScript support and compare stars and recency. | A shortlist with health signals (stars, last release). | Not installed |  |
-| 10 | `codebase-recon` | Coding | Git-history repo analysis (read-only) | No | Low | Analyze this repo's git history for hotspots, bus factor, and bug magnets. Do not change any code. | A read-only analysis report; no code edits. | Not installed | Safe — does not modify code |
-| 11 | `brooks-lint` | Code Review | Code review grounded in classic SE books | No | Low | Review this file for design decay and cite the principle behind each finding: <path> | Findings as Symptom→Source→Consequence→Remedy with book citations. | Not installed |  |
-| 12 | `commit-narrator` | Coding | Clear commit messages from diffs | No | Low | Write a clear commit message for my currently staged changes. | A structured commit message derived from the diff. | Not installed | Uses local git |
-| 13 | `secret-guard` | Security | Pre-commit secret scanner | No | Low | Scan my staged changes for leaked API keys or secrets and redact anything found. | Flags/redacts secrets; never prints the raw secret. | Not installed | Defensive; protects keys/PII |
-| 14 | `env-lint` | Testing & QA | Checks .env vs .env.example | No | Low | Compare my .env against .env.example and list missing or extra keys (names only, no values). | A key-name diff; no values exposed. | Not installed |  |
-| 15 | `mermaid` | Diagrams | Diagrams from text | No | Low | Create a Mermaid architecture diagram for a React/Vite + Supabase + Vercel credit-card site. | Valid Mermaid diagram code you can render. | Not installed |  |
+| 1 | `writers-loop` | Writing | No | Low | No | No | Pending | - | Install in Codex, run test prompt |
+| 2 | `unslop` | Writing | No | Low | No | No | Pending | - | Install in Codex, run test prompt |
+| 3 | `claude-mem` | Memory & Context | No | Low | No | No | Pending | - | Install in Codex, run test prompt |
+| 4 | `pm-skills` | Project Management | No | Low | No | No | Pending | - | Install in Codex, run test prompt |
+| 5 | `agentops` | Agent Orchestration | No | Low | No | No | Pending | - | Install in Codex, run test prompt |
+| 6 | `session-orchestrator` | Agent Orchestration | No | Low | No | No | Pending | - | Install in Codex, run test prompt |
+| 7 | `microsoft-docs` | Documentation | No | Low | No | No | Pending | - | Install in Codex, run test prompt |
+| 8 | `citecheck` | Research & Fact-Checking | No | Low | No | No | Pending | - | Install in Codex, run test prompt |
+| 9 | `github-librarian` | Research | No | Low | No | No | Pending | - | Install in Codex, run test prompt |
+| 10 | `codebase-recon` | Coding | No | Low | No | No | Pending | - | Install in Codex, run test prompt |
+| 11 | `brooks-lint` | Code Review | No | Low | No | No | Pending | - | Install in Codex, run test prompt |
+| 12 | `commit-narrator` | Coding | No | Low | No | No | Pending | - | Install in Codex, run test prompt |
+| 13 | `secret-guard` | Security | No | Low | No | No | Pending | - | Install in Codex, run test prompt |
+| 14 | `env-lint` | Testing & QA | No | Low | No | No | Pending | - | Install in Codex, run test prompt |
+| 15 | `mermaid` | Diagrams | No | Low | No | No | Pending | - | Install in Codex, run test prompt |
 
-**Do not install yet:** account/API-heavy tools, `computer-use-windows`, `burpsuite-bridge`, macOS-only tools (`agent-vision`, `codex-obsidian`, `visionos-apps`). See `reports/codex-marketplace-user-guide.md` §8.
+**Legend:** Installed? Yes/No · Tested? Yes/No · Result Pass/Fail/Pending · Issue found = short note or `-` · Next action = what to do next.
+
+**Do not install yet:** account/API-heavy tools, `computer-use-windows`, `burpsuite-bridge`, macOS-only tools (`agent-vision`, `codex-obsidian`, `visionos-apps`). See `reports/codex-marketplace-user-guide.md` §8 and `reports/next-decision-guide.md` for what to do after these 15 pass.
