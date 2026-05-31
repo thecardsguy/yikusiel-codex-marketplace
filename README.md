@@ -12,8 +12,12 @@ Existing OpenAI plugins are vendored under `plugins/` as `local` sources; extern
 
 ## How to use this marketplace
 
+**New here? Start with the [Codex Marketplace User Guide](reports/codex-marketplace-user-guide.md)** (`reports/codex-marketplace-user-guide.md`) — plain-English: what to install first, the writing / API / app-building stacks, and which plugins need accounts. A `.docx` copy is in `reports/` too.
+
+### Recommended first install (zero-config, no account, broadly useful)
+`writers-loop`, `unslop`, `claude-mem`, `pm-skills`, `agentops`, `session-orchestrator`, `microsoft-docs`, `citecheck`, `github-librarian`, `codebase-recon`, `brooks-lint`, `commit-narrator`, `secret-guard`, `env-lint`, `mermaid`.
+
 1. **Refresh in Codex:** Plugins → `yikusiel-codex-marketplace` → reopen/refresh → install any plugin with `+`.
-2. **Start here (zero-config, broadly useful):** `writers-loop`, `unslop`, `claude-mem`, `agentops`, `session-orchestrator`, `pm-skills`, `microsoft-docs`, `wshobson-agents`, `mermaid`, `codebase-recon`, `brooks-lint`.
 3. **Don't bulk-install** the account/API-heavy plugins (Tier 8 in [`reports/recommended-install-order.md`](reports/recommended-install-order.md)). Add those one at a time, only when you'll use them — many need a paid account or API key.
 4. **Browse everything:** [`reports/plugin-dashboard.md`](reports/plugin-dashboard.md) (or `.csv`) lists every plugin with category, install priority, account needs, platform, and risk. Focused guides: `credit-card-writing-stack.md`, `api-discovery-and-integration-stack.md`, `website-app-building-stack.md`, `creative-identity-tools.md`, `api-and-account-requirements.md`.
 5. **Validate locally** after any edit: `python scripts/validate-marketplace.py` (add `--online` to confirm every external manifest resolves).
