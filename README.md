@@ -10,6 +10,14 @@ My private Codex plugin marketplace — a curated fork of OpenAI's marketplace, 
 
 Existing OpenAI plugins are vendored under `plugins/` as `local` sources; external additions use `git-subdir`/`url` sources that point at upstream repos. Adding a plugin to the marketplace never authenticates it — credentials are entered only when you install + use it (`authentication: ON_INSTALL`).
 
+## Start here
+
+1. **Read the guide:** [`reports/codex-marketplace-user-guide.md`](reports/codex-marketplace-user-guide.md) (a `.docx` copy is alongside it).
+2. **Open the tracker:** [`reports/codex-install-tracker.md`](reports/codex-install-tracker.md) — install order + a test prompt for each plugin.
+3. **Install the first 15 only** (zero-config, no account): `writers-loop`, `unslop`, `claude-mem`, `pm-skills`, `agentops`, `session-orchestrator`, `microsoft-docs`, `citecheck`, `github-librarian`, `codebase-recon`, `brooks-lint`, `commit-narrator`, `secret-guard`, `env-lint`, `mermaid`.
+4. **Do not bulk-install** API/account-heavy tools — add those one at a time, only when you'll use them.
+5. **Follow the 5-day plan:** [`reports/first-week-codex-plugin-plan.md`](reports/first-week-codex-plugin-plan.md).
+
 ## How to use this marketplace
 
 **New here? Start with the [Codex Marketplace User Guide](reports/codex-marketplace-user-guide.md)** (`reports/codex-marketplace-user-guide.md`) — plain-English: what to install first, the writing / API / app-building stacks, and which plugins need accounts. A `.docx` copy is in `reports/` too.
