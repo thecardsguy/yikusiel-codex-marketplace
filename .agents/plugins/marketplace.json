@@ -1870,6 +1870,269 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Design"
+    },
+    {
+      "name": "unslop",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/MohamedAbdallah-14/unslop",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Writing"
+    },
+    {
+      "name": "writers-loop",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/xxsang/writers-loop",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Writing"
+    },
+    {
+      "name": "pr-storyteller",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/mturac/pr-storyteller",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Code Review"
+    },
+    {
+      "name": "test-gap",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/mturac/test-gap",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Testing & QA"
+    },
+    {
+      "name": "brooks-lint",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/hyhmrright/brooks-lint",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Code Review"
+    },
+    {
+      "name": "env-lint",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/mturac/env-lint",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Testing & QA"
+    },
+    {
+      "name": "secret-guard",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/mturac/secret-guard",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security"
+    },
+    {
+      "name": "session-orchestrator",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/Kanevry/session-orchestrator",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Agent Orchestration"
+    },
+    {
+      "name": "codebase-recon",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/yujiachen-y/codebase-recon-skill",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Coding"
+    },
+    {
+      "name": "langfuse",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/avivsinai/langfuse-mcp",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Analytics"
+    },
+    {
+      "name": "agentops",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/boshu2/agentops",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Agent Orchestration"
+    },
+    {
+      "name": "standup-gen",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/mturac/standup-gen",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "todo-harvest",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/mturac/todo-harvest",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "dodopayments",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/dodopayments/dodo-agent-plugin",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Finance"
+    },
+    {
+      "name": "convex",
+      "source": {
+        "source": "git-subdir",
+        "url": "openai/plugins",
+        "path": "plugins/convex",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "maquette",
+      "source": {
+        "source": "git-subdir",
+        "url": "Ixe1/codex-plugins",
+        "path": "plugins/maquette",
+        "ref": "master"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Design"
+    },
+    {
+      "name": "claude-mem",
+      "source": {
+        "source": "url",
+        "url": "thedotmack/claude-mem",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Memory & Context"
+    },
+    {
+      "name": "pm-skills",
+      "source": {
+        "source": "url",
+        "url": "product-on-purpose/pm-skills",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Project Management"
+    },
+    {
+      "name": "shopify-plugin",
+      "source": {
+        "source": "url",
+        "url": "Shopify/Shopify-AI-Toolkit",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Tools & Integrations"
     }
   ]
 }
