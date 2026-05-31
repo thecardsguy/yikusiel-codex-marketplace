@@ -1,165 +1,79 @@
 # Marketplace Expansion Report — yikusiel-codex-marketplace
 
-**Date:** 2026-05-31
-**Repo:** `thecardsguy/yikusiel-codex-marketplace`
-**Manifest:** `.agents/plugins/marketplace.json` (name `yikusiel-codex-marketplace` — unchanged)
-**Method:** Aggressive discovery across `openai/plugins`, `openai/skills`, `hashgraph-online/awesome-codex-plugins`, and GitHub‑wide code search (1,138 `.codex-plugin/plugin.json` hits) → deep validation of ~49 candidates (stub‑detection, safety, API/platform flags, 1–10 scoring) → conservative adds (score ≥ 8, valid non‑stub, not high‑risk, no name collision, reachable manifest).
+**Repo:** `thecardsguy/yikusiel-codex-marketplace` · **Manifest:** `.agents/plugins/marketplace.json` (name `yikusiel-codex-marketplace`, unchanged)
 
----
+## Run history
+| Run | Commit | Plugins | Note |
+|---|---|---|---|
+| Base (OpenAI fork) | `f1dae33`/`4601603` | 147 | local OpenAI plugins |
+| Run 1 (creative/visual) | `e4af80b` | 154 | +7 external |
+| Run 2 (curated zero-config) | `ef79943` | 173 | +19 |
+| **Run 3 (this run — big menu)** | **this commit** | **233** | **+60** |
 
-## 1. Plugin count — before & after
+## This run: 173 → 233 (+60 added, 5 already-covered, 1 stub skipped)
+Adding rule relaxed per your instruction: a plugin is added if it has a valid non-stub `.codex-plugin/plugin.json`, a reachable manifest, a real useful purpose, and is not high-risk — **even if it needs an API key / account / OAuth later, is niche, or is Windows-unverified.** Nothing is authenticated or activated; entries use `authentication: ON_INSTALL`.
 
-| | Count |
-|---|---|
-| Before | **154** |
-| Added this run | **+19** |
-| **After** | **173** |
+Validation: JSON valid ✔ · no duplicate names ✔ · all 60 new manifests reachable (gh-api 200) ✔ · `scripts/validate-marketplace.py` passes (offline + `--online`).
 
-JSON validated ✔ · No duplicate names ✔ · All 19 new manifests reachable (HTTP/gh‑api 200) ✔ · Diff = 263 insertions, 0 deletions, marketplace.json only ✔
+### Added this run, by category
 
----
+**Creative · image · video · vision (8)**
+`nyldn-img` (OpenAI gpt-image-2 + Gemini image gen — API), `higgsfield` (image+video, 30+ models, **Soul ID identity** — account), `aether` (visual memory/prompt refine — API), `pika` (Pika video/creative suite — OAuth), `comfy-workflow` (ComfyUI workflow mgmt — local ComfyUI), `roboflow` (computer vision pipelines — API), `fiftyone` (CV dataset/eval), `image-studio` (image editing — API), `video-vision` (video review — API).
 
-## 2. Plugins added (19)
+**SEO · marketing · content (6)**
+`codex-seo` (19-skill SEO audit — DataForSEO/Firecrawl/Google), `enterprise-seo`, `digital-marketing`, `adsense-readiness` (AdSense readiness — useful for credit-card content monetization), `content-planner` (API), `linkedin-skills`.
 
-All added as `git-subdir` (subfolder) or `url` (repo‑root) sources; `authentication: ON_INSTALL` so nothing activates until you install + authorize it.
+**Database · backend · web · CMS · auth (4)**
+`prisma` (ORM, official), `mongodb` (official — API), `sanity` (CMS, official — API), `clerk` (auth, official — API), `base44` (full-stack apps — API). *(`supabase`, `motherduck` already covered.)*
 
-| Plugin | Category | Source | Score | API key | What it does |
-|---|---|---|---|---|---|
-| `writers-loop` | Writing | hashgraph `xxsang/writers-loop` | 9 | — | Multi‑stage writing loop (frame→plan→draft→critique→revise) with local style learning |
-| `unslop` | Writing | hashgraph `MohamedAbdallah-14/unslop` | 8 | — | Strips AI‑isms from prose; humanizes output, preserves code |
-| `brooks-lint` | Code Review | hashgraph `hyhmrright/brooks-lint` | 9 | — | Code review grounded in 12 classic SE books; Symptom→Source→Consequence→Remedy |
-| `pr-storyteller` | Code Review | hashgraph `mturac/pr-storyteller` | 8 | — | Generates full PR descriptions from local git history + diff |
-| `codebase-recon` | Coding | hashgraph `yujiachen-y/codebase-recon-skill` | 8 | — | Git‑history analysis: hotspots, bus factor, bug magnets — before reading code |
-| `test-gap` | Testing & QA | hashgraph `mturac/test-gap` | 8 | — | Intersects git diff with coverage report to find untested changed lines |
-| `env-lint` | Testing & QA | hashgraph `mturac/env-lint` | 8 | — | Diffs `.env` vs `.env.example` (key names only, never values) |
-| `secret-guard` | Security | hashgraph `mturac/secret-guard` | 8 | — | Pre‑commit secret scanner (entropy + patterns), redacted output |
-| `session-orchestrator` | Agent Orchestration | hashgraph `Kanevry/session-orchestrator` | 9 | — | Research‑plan‑execute‑close session lifecycle, quality‑gated waves |
-| `agentops` | Agent Orchestration | hashgraph `boshu2/agentops` | 9 | — | Operational layer for coding agents; repo‑native session memory + 80+ skills |
-| `claude-mem` | Memory & Context | `thedotmack/claude-mem` (root) | 9 | — | Persistent memory compression across agent sessions |
-| `standup-gen` | Productivity | hashgraph `mturac/standup-gen` | 8 | — | Daily standup notes from git log across repos |
-| `todo-harvest` | Productivity | hashgraph `mturac/todo-harvest` | 8 | — | Harvests TODO/FIXME/HACK with git‑blame author + age |
-| `pm-skills` | Project Management | `product-on-purpose/pm-skills` (root) | 9 | — | 63 product‑management skills across the full lifecycle |
-| `convex` | Developer Tools | `openai/plugins` `plugins/convex` | 8 | — | Official: add a reactive, type‑safe Convex backend to JS/TS apps |
-| `maquette` | Design | `Ixe1/codex-plugins` `plugins/maquette` (master) | 8 | — | Image‑guided web design: brand boards → coded HTML/CSS components + tokens |
-| `shopify-plugin` | Tools & Integrations | `Shopify/Shopify-AI-Toolkit` (root) | 9 | — | Official Shopify: Admin/Storefront GraphQL, Liquid, Functions, Hydrogen |
-| `langfuse` | Analytics | hashgraph `avivsinai/langfuse-mcp` | 9 | **Yes** | LLM observability — query traces/sessions/prompts via Langfuse |
-| `dodopayments` | Finance | hashgraph `dodopayments/dodo-agent-plugin` | 9 | Optional | Official Dodo Payments: checkout, subscriptions, billing, webhooks |
+**Data · BI · monitoring · spreadsheets (5)**
+`metabase` (BI — needs instance), `dataproduct-builder-dbt` (dbt — API), `checkly` (monitoring, official — API), `sentry-cli` (errors — account), `spreadsheet-peek` (spreadsheets/reporting).
 
----
+**Security (4)**
+`stackhawk` (DAST, official — API), `fortify` (official — API), `agentic-security`, `armorcodex` (API).
 
-## 3. Plugins skipped (broken / unsafe / irrelevant)
+**Research (4)**
+`gpt-researcher` (popular research agent — API), `arxiv`, `codex-autoresearch` (546⭐), `papersflow` (API).
 
-| Plugin | Reason |
-|---|---|
-| `codex-mem` (`2kDarki/codex-mem`) | **Stub** — score 3; placeholder manifest, not a working bundle. (`claude-mem` was added instead for memory.) |
-| `prompt-to-asset` (`MohamedAbdallah-14/prompt-to-asset`) | **Stub** (from prior run) — entry points to a nonexistent build artifact. Still excluded. |
-| `compass-defi` (`CompassLabs/compass-agent-skill`) | Real but **out of scope** — crypto/DeFi (Aave, Morpho); score 5. |
+**Sales · CRM · email (3)**
+`vibeprospecting` (Explorium — API), `loops` (email, official — API), `superhuman-mail` (Superhuman). *(`zoominfo`, `egnyte` already covered.)*
 
----
+**Automation · browser · scraping (5)**
+`computer-use-windows` (computer use on Windows), `browser-bridge`, `crawlbase` (scraping — API), `gsearch` (Google search), `n8n-mcp-synta` (n8n automation).
 
-## 4. Candidates for later (real & useful, but need auth / setup / review)
+**Code · CI · QA · dev (13)**
+`codex-reviewer`, `commit-narrator`, `changelog-forge`, `flaky-detector`, `deps-doctor`, `spec-driven`, `bitbucket-cli` (API), `jenkins-cli` (API), `compound-engineering` (API), `wshobson-agents`, `atlassian-forge` (official — API), `mermaid`, `context-pack`.
 
-Add these after verifying credential setup and (where noted) Windows compatibility. Listed strongest‑first.
+**Productivity · PM (5)**
+`task-scheduler`, `gh-project-plugin`, `project-autopilot`, `axonflow` (governance — API), `codex-obsidian` (**macOS-only**).
 
-**Creative / image / video (top priority for your creative work):**
-| Plugin | Repo | Why later |
-|---|---|---|
-| `nyldn/img` | `nyldn/img` | **Real image generation** (OpenAI gpt‑image‑2 + Gemini). The genuine replacement for the broken prompt‑to‑asset. Needs OPENAI_API_KEY/GEMINI_API_KEY; brand‑new (0 stars), Windows untested. |
-| `higgsfield-ai/skills` | `higgsfield-ai/skills` | **Image + video gen, 30+ models**, plus **Soul ID = face‑consistent identity** (closest real thing to your identity‑consistency goal). Needs paid Higgsfield account + interactive CLI login + curl‑piped install. |
-| `aether` | `shawnxie94/aether` | Visual memory + prompt refinement for image gen. Needs API setup. |
+**Platform-specific (1)**
+`visionos-apps` (**macOS-only**, visionOS dev — API).
 
-**SEO / data / research (high value for The Cards Guy):**
-| Plugin | Repo | Why later |
-|---|---|---|
-| `codex-seo` | hashgraph `BestLemoon/codex-seo` | 19‑skill full‑site SEO audit suite. Needs **DataForSEO + Firecrawl + Google AI** (paid). Excellent once accounts are set. |
-| `metabase` | `metabase/metabase-codex-plugin` | Official Metabase BI/analytics. Needs a Metabase instance. |
-| `codex-autoresearch` | `TheGreenCedar/codex-autoresearch` | Optimization/research loops (546⭐). |
-| `papersflow` | hashgraph `papersflow-ai/...` | Hosted research workflows (API). |
-| `dataproduct-builder-dbt` | hashgraph `entropy-data/...` | dbt data‑product builder (API/warehouse). |
+### Already-covered (skipped — official versions already in the OpenAI fork)
+**5 skipped:** `heygen`, `supabase`, `motherduck`, `zoominfo`, `egnyte`. The community/duplicate versions were dropped because the marketplace already contains these services. (`mongodb` was *not* a collision and **was** added.)
 
-**Dev / code / CI / security:**
-`codex-reviewer`, `commit-narrator`, `changelog-forge`, `flaky-detector`, `deps-doctor`, `armorcodex` (API), `context-pack`, `spec-driven`, `bitbucket-cli` (API), `jenkins-cli` (API), `axonflow` (governance, API).
+### Skipped — broken
+`evillollive/Analyze-Video-Skill` — has a `.codex-plugin/plugin.json` but it is a **stub** (score 5). Not added.
 
-**Productivity / PM / automation:**
-`task-scheduler`, `gh-project-plugin`, `project-autopilot`, `n8n-mcp-synta`, `base44-skills` (API).
+## Cumulative state (233 plugins)
+- **147** local OpenAI plugins (the fork) · **86** external (`git-subdir` + `url`)
+- Run `python scripts/validate-marketplace.py` for the live category/source breakdown.
 
-**Platform‑restricted (macOS‑only — you're on Windows):**
-`codex-obsidian` (`greg-asher/codex-obsidian`), `visionos-apps` (`studiomeije/visionos-codex-plugin`).
+## API keys / accounts
+~30 of the 60 added require an API key, OAuth, or paid account **at install/use time** (not now). See `reports/recommended-install-order.md` (Tier 5) and `reports/candidate-backlog.md` for the exact list. None require credentials to merely appear in the marketplace.
 
----
+## Platform
+- **macOS-only (2 added):** `codex-obsidian`, `visionos-apps` — install only on macOS.
+- **Windows-unverified (added):** `nyldn-img`, `higgsfield`, `metabase`, `dataproduct-builder-dbt`, `codex-reviewer`, `armorcodex`, `axonflow`, `compound-engineering`, `sentry-cli` — likely cross-platform, test before relying on them.
+- All other added plugins report Windows-compatible.
 
-## 5. Broken / stub packages found
-- `MohamedAbdallah-14/prompt-to-asset` — stub, dead entry path.
-- `2kDarki/codex-mem` — stub manifest (score 3).
-- `tmchow/tmc-marketplace`, `OutlineDriven/odin-codex-plugin`, `angristan/codex-wakatime` — no `.codex-plugin/plugin.json` at a resolvable path (not directly addable).
+## Related reports
+- `reports/recommended-install-order.md` — tiered install plan.
+- `reports/creative-identity-tools.md` — image/video/identity deep-dive + honest identity finding.
+- `reports/candidate-backlog.md` — 570+ discovered repos not yet validated + what's needed to add them.
 
----
-
-## 6. Claude‑only / loose‑skill packages (useful later, need wrapping for Codex)
-| Repo | Type | Note |
-|---|---|---|
-| `openai/skills` | 44 loose `SKILL.md` | Official Codex **skills catalog** — consumed as skills, not marketplace plugins; no `.codex-plugin/plugin.json`. |
-| `awesome-genmedia/skills` | Claude plugin (`.claude-plugin`) | **Closest real identity/character toolkit** — wraps InstantID, IP‑Adapter, PhotoMaker, ControlNet, FLUX LoRA, face‑swap, StoryDiffusion via eachlabs.ai. Would need Claude→Codex wrapping. |
-| `hunix/HoC-Republic` | Proprietary `hoc.plugin.json` | MagicAnimate/OmniGen/StoryDiffusion/FaceFusion/DeepFaceLab — experimental, 0 stars, not Codex format. Treat with caution. |
-
-> Note: `obra/superpowers` and HeyGen `hyperframes` are **already in your marketplace** (vendored as `local` plugins by the OpenAI fork), so they were not re‑added.
-
----
-
-## 7. Identity / height / body / character‑consistency findings
-**Honest finding: there is NO real, packaged Codex plugin (`.codex-plugin/plugin.json`) for identity preservation, face identity, portrait/character consistency, body/height/scale continuity, same‑person video, pose control, ControlNet, IP‑Adapter, InstantID, PuLID, LoRA, or ComfyUI character workflows.** (Exhaustive `gh search code` / `gh search repos` / tree inspection, May 2026.)
-
-Closest real, installable options (none are Codex‑native):
-- **`higgsfield-ai/skills` → Soul ID** — trains a face‑faithful identity model usable across generations. Real plugin, but candidate‑later (paid account, CLI login). **This is the most practical near‑term path to identity consistency.**
-- **`awesome-genmedia/skills`** — Claude‑format; wraps InstantID/IP‑Adapter/PhotoMaker/StoryDiffusion. Would need wrapping.
-
-A bespoke identity‑lock / height‑lock / body‑continuity skill remains a **custom build** (you asked me not to create custom skills yet — flagged for your approval when you're ready).
-
----
-
-## 8. Plugins requiring API keys / accounts
-- **Added:** `langfuse` (LANGFUSE_PUBLIC_KEY / SECRET_KEY / HOST — free tier available); `dodopayments` (browser OAuth by default; optional DODO_API_KEY).
-- **Candidates:** `codex-seo` (DataForSEO + Firecrawl + Google AI), `nyldn/img` (OpenAI/Gemini), `higgsfield` (Higgsfield account), `aether`, `papersflow`, `armorcodex`, `axonflow`, `dataproduct-builder-dbt`, `bitbucket-cli`, `jenkins-cli`, `base44`.
-- **No key needed (added):** the other 17, incl. all writing/QA/security/git/memory/PM/convex/maquette/shopify.
-
-## 9. macOS‑only
-- **Added:** none.
-- **Candidates:** `codex-obsidian`, `visionos-apps`. (Also note `agent-vision`, already in your marketplace, is macOS‑only.)
-
-## 10. Windows‑friendly
-- **Confirmed Windows‑OK (added):** writers-loop, unslop, brooks-lint, pr-storyteller, codebase-recon, test-gap, env-lint, secret-guard, standup-gen, todo-harvest, claude-mem, pm-skills, convex, maquette, shopify-plugin, langfuse, dodopayments (17).
-- **Likely cross‑platform, Windows unverified (added):** `session-orchestrator`, `agentops` (Node‑based; test before relying on them).
-
----
-
-## 11. Most useful for your businesses
-
-**The Cards Guy (credit‑card content/tools):** `writers-loop`, `unslop` (content polish) · `maquette` (landing pages/visual) · `pm-skills` (roadmap) · later: `codex-seo`, `nyldn/img`.
-
-**HY Credit / DisputeIQ (credit‑repair automation):** `writers-loop` + `unslop` (dispute letters) · `secret-guard` (avoid leaking PII/keys) · `session-orchestrator` + `agentops` (automation workflows) · `dodopayments` (billing) · `claude-mem` (case context).
-
-**AI scheduling / workflow automation:** `session-orchestrator`, `agentops`, `claude-mem`, `langfuse` (observe your AI runs) · later: `task-scheduler`, `n8n-mcp-synta`.
-
-**Medical / family coordination:** `pm-skills`, `standup-gen`, `todo-harvest`, `claude-mem` (durable context) · later: `codex-obsidian` (macOS only).
-
-**Creative image/video:** `maquette` (added) · later: `nyldn/img` (image gen), `higgsfield` (image+video + Soul‑ID identity). HeyGen `hyperframes` (HTML→MP4) is already in your marketplace.
-
-**Web apps / engineering (all businesses):** `convex` (backend), `brooks-lint` + `pr-storyteller` + `codebase-recon` + `test-gap` + `env-lint` (code quality/QA), `shopify-plugin` (if you ever run a store).
-
----
-
-## 12. Recommended install order in Codex
-1. **Tier 1 — zero‑config, broadly useful (install first):** `writers-loop`, `unslop`, `brooks-lint`, `pr-storyteller`, `codebase-recon`, `secret-guard`, `claude-mem`, `pm-skills`, `agentops`, `session-orchestrator`, `standup-gen`, `todo-harvest`, `test-gap`, `env-lint`.
-2. **Tier 2 — light setup / project‑specific:** `convex`, `maquette`, `shopify-plugin`.
-3. **Tier 3 — needs an account/keys:** `langfuse` (Langfuse keys), `dodopayments` (Dodo OAuth).
-
-In Codex: **Plugins → `yikusiel-codex-marketplace` → reopen/refresh → install each with `+`.**
-
----
-
-## 13. Recommended next phase
-1. **Creative pipeline:** test `nyldn/img` (image gen) and `higgsfield` (image+video + **Soul‑ID identity**) in a scratch project; verify API‑key setup + Windows behavior, then promote to add‑now.
-2. **SEO for The Cards Guy:** provision DataForSEO + Firecrawl + Google AI, then add `codex-seo`.
-3. **Identity/character consistency:** decide between (a) adopting Higgsfield Soul‑ID, (b) wrapping `awesome-genmedia/skills` (Claude→Codex), or (c) approving a **custom skill** build. No ready‑made Codex plugin exists.
-4. **Maintenance:** re‑scan `openai/plugins` + `hashgraph-online/awesome-codex-plugins` periodically for new bundles (this run already syncs you to current official set, minus `convex` which is now added).
-5. Optionally promote the strongest dev/CI candidates (`codex-reviewer`, `deps-doctor`, `commit-narrator`) once you confirm `gh`/CI auth in your Codex environment.
+## Next phase
+1. Validate the highest-value backlog repos (official orgs: `datocms`, `couchbaselabs`, `avifenesh/valkey-skills`, `kurrent-io`, `litestar-org`, `spotify/ads-agentic-tools`, `Azure/documentdb-agent-kit`, GCP extensions) and promote.
+2. Identity/character consistency: still no dedicated Codex plugin — best real paths are `higgsfield` Soul ID and `heygen` avatars (both now installable). A bespoke identity-lock skill remains a custom build (your approval needed).
+3. When ready, authorize accounts for the Tier-5 (API/paid) plugins you actually want to use.

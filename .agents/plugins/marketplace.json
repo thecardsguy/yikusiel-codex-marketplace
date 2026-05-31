@@ -2133,6 +2133,811 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Tools & Integrations"
+    },
+    {
+      "name": "nyldn-img",
+      "source": {
+        "source": "url",
+        "url": "nyldn/img",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Image Generation"
+    },
+    {
+      "name": "higgsfield",
+      "source": {
+        "source": "url",
+        "url": "higgsfield-ai/skills",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Image & Video"
+    },
+    {
+      "name": "aether",
+      "source": {
+        "source": "git-subdir",
+        "url": "shawnxie94/aether",
+        "path": "plugins/aether",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creative"
+    },
+    {
+      "name": "codex-seo",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/BestLemoon/codex-seo",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "SEO"
+    },
+    {
+      "name": "metabase",
+      "source": {
+        "source": "git-subdir",
+        "url": "metabase/metabase-codex-plugin",
+        "path": "",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Data & BI"
+    },
+    {
+      "name": "codex-autoresearch",
+      "source": {
+        "source": "git-subdir",
+        "url": "TheGreenCedar/codex-autoresearch",
+        "path": "plugins/codex-autoresearch",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Research"
+    },
+    {
+      "name": "papersflow",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/papersflow-ai/papersflow-codex-plugin",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Research"
+    },
+    {
+      "name": "dataproduct-builder-dbt",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/entropy-data/dataproduct-builder-dbt",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Data"
+    },
+    {
+      "name": "codex-reviewer",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/schuettc/codex-reviewer",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Code Review"
+    },
+    {
+      "name": "commit-narrator",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/mturac/commit-narrator",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Coding"
+    },
+    {
+      "name": "changelog-forge",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/mturac/changelog-forge",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Coding"
+    },
+    {
+      "name": "flaky-detector",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/mturac/flaky-detector",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Testing & QA"
+    },
+    {
+      "name": "deps-doctor",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/mturac/deps-doctor",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security"
+    },
+    {
+      "name": "armorcodex",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/armoriq/armorCodex",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security"
+    },
+    {
+      "name": "context-pack",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/Rothschildiuk/context-pack",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Memory & Context"
+    },
+    {
+      "name": "spec-driven",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/Habib0x0/spec-driven-plugin",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Coding"
+    },
+    {
+      "name": "bitbucket-cli",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/avivsinai/bitbucket-cli",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "jenkins-cli",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/avivsinai/jenkins-cli",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Deployment & CI"
+    },
+    {
+      "name": "axonflow",
+      "source": {
+        "source": "git-subdir",
+        "url": "getaxonflow/axonflow-codex-plugin",
+        "path": "",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security"
+    },
+    {
+      "name": "task-scheduler",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/6Delta9/task-scheduler-codex-plugin",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "gh-project-plugin",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/zfifteen/gh-project-plugin",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Project Management"
+    },
+    {
+      "name": "project-autopilot",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/AlexMi64/codex-project-autopilot",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Project Management"
+    },
+    {
+      "name": "n8n-mcp-synta",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/Synta-ai/n8n-mcp-codex-plugin-synta",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Automation"
+    },
+    {
+      "name": "base44",
+      "source": {
+        "source": "url",
+        "url": "base44/skills",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Web Apps"
+    },
+    {
+      "name": "codex-obsidian",
+      "source": {
+        "source": "git-subdir",
+        "url": "hashgraph-online/awesome-codex-plugins",
+        "path": "plugins/greg-asher/codex-obsidian",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "visionos-apps",
+      "source": {
+        "source": "git-subdir",
+        "url": "studiomeije/visionos-codex-plugin",
+        "path": "plugins/build-visionos-apps",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Coding"
+    },
+    {
+      "name": "pika",
+      "source": {
+        "source": "url",
+        "url": "Pika-Labs/Pika-Plugins",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Image & Video"
+    },
+    {
+      "name": "comfy-workflow",
+      "source": {
+        "source": "url",
+        "url": "yaa19212-droid/comfy-workflow-mcp",
+        "ref": "master"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Image & Video"
+    },
+    {
+      "name": "roboflow",
+      "source": {
+        "source": "url",
+        "url": "roboflow/computer-vision-skills",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Computer Vision"
+    },
+    {
+      "name": "fiftyone",
+      "source": {
+        "source": "url",
+        "url": "voxel51/fiftyone-skills",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Computer Vision"
+    },
+    {
+      "name": "image-studio",
+      "source": {
+        "source": "url",
+        "url": "jhupo/image-studio-mcp",
+        "ref": "master"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Image Generation"
+    },
+    {
+      "name": "video-vision",
+      "source": {
+        "source": "url",
+        "url": "EyrieCommander/codex-video-vision",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Video Review"
+    },
+    {
+      "name": "enterprise-seo",
+      "source": {
+        "source": "url",
+        "url": "sasgustav/enterprise-seo-codex-plugin",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "SEO"
+    },
+    {
+      "name": "digital-marketing",
+      "source": {
+        "source": "url",
+        "url": "indranilbanerjee/digital-marketing-pro",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Marketing"
+    },
+    {
+      "name": "adsense-readiness",
+      "source": {
+        "source": "url",
+        "url": "huifer/AdSense-Readiness-Benchmark",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Marketing"
+    },
+    {
+      "name": "content-planner",
+      "source": {
+        "source": "url",
+        "url": "bladerik/content-planner",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Content"
+    },
+    {
+      "name": "linkedin-skills",
+      "source": {
+        "source": "url",
+        "url": "sergebulaev/linkedin-skills",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Marketing"
+    },
+    {
+      "name": "prisma",
+      "source": {
+        "source": "url",
+        "url": "prisma/prisma-plugin",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Database"
+    },
+    {
+      "name": "sanity",
+      "source": {
+        "source": "url",
+        "url": "sanity-io/agent-toolkit",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "CMS"
+    },
+    {
+      "name": "mongodb",
+      "source": {
+        "source": "url",
+        "url": "mongodb/agent-skills",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Database"
+    },
+    {
+      "name": "clerk",
+      "source": {
+        "source": "url",
+        "url": "clerk/skills",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Auth"
+    },
+    {
+      "name": "checkly",
+      "source": {
+        "source": "url",
+        "url": "checkly/checkly-plugin",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Monitoring"
+    },
+    {
+      "name": "stackhawk",
+      "source": {
+        "source": "url",
+        "url": "stackhawk/agent-skills",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security"
+    },
+    {
+      "name": "agentic-security",
+      "source": {
+        "source": "url",
+        "url": "Clear-Capabilities/agentic-security",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security"
+    },
+    {
+      "name": "fortify",
+      "source": {
+        "source": "url",
+        "url": "fortify/skills",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security"
+    },
+    {
+      "name": "gpt-researcher",
+      "source": {
+        "source": "url",
+        "url": "assafelovic/gpt-researcher",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Research"
+    },
+    {
+      "name": "arxiv",
+      "source": {
+        "source": "url",
+        "url": "cyanheads/arxiv-mcp-server",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Research"
+    },
+    {
+      "name": "vibeprospecting",
+      "source": {
+        "source": "url",
+        "url": "explorium-ai/vibeprospecting-plugin",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Sales & CRM"
+    },
+    {
+      "name": "loops",
+      "source": {
+        "source": "url",
+        "url": "loops-so/skills",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Email"
+    },
+    {
+      "name": "superhuman-mail",
+      "source": {
+        "source": "url",
+        "url": "superhuman/mcp-mail",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Email"
+    },
+    {
+      "name": "computer-use-windows",
+      "source": {
+        "source": "url",
+        "url": "twh66666/codex-computer-use-for-windows",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Browser Automation"
+    },
+    {
+      "name": "browser-bridge",
+      "source": {
+        "source": "url",
+        "url": "redvex/browser-bridge",
+        "ref": "develop"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Browser Automation"
+    },
+    {
+      "name": "crawlbase",
+      "source": {
+        "source": "url",
+        "url": "crawlbase/crawlbase-codex-plugin",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Scraping"
+    },
+    {
+      "name": "gsearch",
+      "source": {
+        "source": "url",
+        "url": "daanielcruz/gsearch-mcp",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Research"
+    },
+    {
+      "name": "atlassian-forge",
+      "source": {
+        "source": "url",
+        "url": "atlassian/forge-skills",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "wshobson-agents",
+      "source": {
+        "source": "git-subdir",
+        "url": "wshobson/agents",
+        "path": "plugins/developer-essentials",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Agent Orchestration"
+    },
+    {
+      "name": "compound-engineering",
+      "source": {
+        "source": "git-subdir",
+        "url": "EveryInc/compound-engineering-plugin",
+        "path": "plugins/compound-engineering",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Coding"
+    },
+    {
+      "name": "spreadsheet-peek",
+      "source": {
+        "source": "url",
+        "url": "wolfiesch/spreadsheet-peek",
+        "ref": "master"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Spreadsheets"
+    },
+    {
+      "name": "mermaid",
+      "source": {
+        "source": "url",
+        "url": "henryennis/mermaid-js-for-agents",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Diagrams"
+    },
+    {
+      "name": "sentry-cli",
+      "source": {
+        "source": "url",
+        "url": "diegopetrucci/sentry-cli",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Observability"
     }
   ]
 }
