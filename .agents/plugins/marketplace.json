@@ -2938,6 +2938,318 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Observability"
+    },
+    {
+      "name": "firecrawl",
+      "source": {
+        "source": "url",
+        "url": "firecrawl/firecrawl-codex-plugin",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Scraping & Research"
+    },
+    {
+      "name": "stripe-link",
+      "source": {
+        "source": "url",
+        "url": "stripe/link-cli",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Finance"
+    },
+    {
+      "name": "twilio-dev-kit",
+      "source": {
+        "source": "url",
+        "url": "twilio/ai",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "APIs & Communications"
+    },
+    {
+      "name": "microsoft-docs",
+      "source": {
+        "source": "url",
+        "url": "MicrosoftDocs/mcp",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Documentation"
+    },
+    {
+      "name": "citecheck",
+      "source": {
+        "source": "url",
+        "url": "color4-alt/CiteCheck",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Research & Fact-Checking"
+    },
+    {
+      "name": "github-librarian",
+      "source": {
+        "source": "url",
+        "url": "diegopetrucci/github-librarian",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Research"
+    },
+    {
+      "name": "n8n-codex",
+      "source": {
+        "source": "url",
+        "url": "cuppersatl/n8n-codex-plugin",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Automation"
+    },
+    {
+      "name": "llm-router",
+      "source": {
+        "source": "url",
+        "url": "ypollak2/llm-router",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Agent Orchestration"
+    },
+    {
+      "name": "burpsuite-bridge",
+      "source": {
+        "source": "url",
+        "url": "6jeffr3y/burpsuite-mcp-bridge",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security"
+    },
+    {
+      "name": "datocms",
+      "source": {
+        "source": "url",
+        "url": "datocms/agent-skills",
+        "ref": "master"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "CMS"
+    },
+    {
+      "name": "couchbase",
+      "source": {
+        "source": "url",
+        "url": "couchbaselabs/agent-skills",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Database"
+    },
+    {
+      "name": "valkey",
+      "source": {
+        "source": "url",
+        "url": "avifenesh/valkey-skills",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Database"
+    },
+    {
+      "name": "kurrent",
+      "source": {
+        "source": "url",
+        "url": "kurrent-io/skills",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Database"
+    },
+    {
+      "name": "litestar",
+      "source": {
+        "source": "url",
+        "url": "litestar-org/litestar-skills",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Web Frameworks"
+    },
+    {
+      "name": "spotify-ads",
+      "source": {
+        "source": "url",
+        "url": "spotify/ads-agentic-tools",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Marketing"
+    },
+    {
+      "name": "azure-documentdb",
+      "source": {
+        "source": "url",
+        "url": "Azure/documentdb-agent-kit",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Database"
+    },
+    {
+      "name": "zscaler",
+      "source": {
+        "source": "url",
+        "url": "zscaler/zscaler-terraform-skills",
+        "ref": "master"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Security"
+    },
+    {
+      "name": "truefoundry",
+      "source": {
+        "source": "url",
+        "url": "truefoundry/tfy-deploy-skills",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Deployment & CI"
+    },
+    {
+      "name": "seam",
+      "source": {
+        "source": "url",
+        "url": "seamapi/seam-plugin",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "APIs & Communications"
+    },
+    {
+      "name": "drpc",
+      "source": {
+        "source": "url",
+        "url": "drpcorg/drpc-agent-skills",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "APIs & Communications"
+    },
+    {
+      "name": "alation",
+      "source": {
+        "source": "url",
+        "url": "Alation/alation-plugins",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Data & Analytics"
+    },
+    {
+      "name": "astro",
+      "source": {
+        "source": "url",
+        "url": "incluud/astro-codex-plugin",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Web Frameworks"
+    },
+    {
+      "name": "accelerate-wp",
+      "source": {
+        "source": "url",
+        "url": "humanmade/accelerate-ai-toolkit",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "CMS"
+    },
+    {
+      "name": "tradingview",
+      "source": {
+        "source": "url",
+        "url": "atilaahmettaner/tradingview-mcp",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Finance"
     }
   ]
 }

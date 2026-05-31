@@ -10,6 +10,15 @@ My private Codex plugin marketplace — a curated fork of OpenAI's marketplace, 
 
 Existing OpenAI plugins are vendored under `plugins/` as `local` sources; external additions use `git-subdir`/`url` sources that point at upstream repos. Adding a plugin to the marketplace never authenticates it — credentials are entered only when you install + use it (`authentication: ON_INSTALL`).
 
+## How to use this marketplace
+
+1. **Refresh in Codex:** Plugins → `yikusiel-codex-marketplace` → reopen/refresh → install any plugin with `+`.
+2. **Start here (zero-config, broadly useful):** `writers-loop`, `unslop`, `claude-mem`, `agentops`, `session-orchestrator`, `pm-skills`, `microsoft-docs`, `wshobson-agents`, `mermaid`, `codebase-recon`, `brooks-lint`.
+3. **Don't bulk-install** the account/API-heavy plugins (Tier 8 in [`reports/recommended-install-order.md`](reports/recommended-install-order.md)). Add those one at a time, only when you'll use them — many need a paid account or API key.
+4. **Browse everything:** [`reports/plugin-dashboard.md`](reports/plugin-dashboard.md) (or `.csv`) lists every plugin with category, install priority, account needs, platform, and risk. Focused guides: `credit-card-writing-stack.md`, `api-discovery-and-integration-stack.md`, `website-app-building-stack.md`, `creative-identity-tools.md`, `api-and-account-requirements.md`.
+5. **Validate locally** after any edit: `python scripts/validate-marketplace.py` (add `--online` to confirm every external manifest resolves).
+6. **Do not** rename the marketplace (`yikusiel-codex-marketplace`) or move `.agents/plugins/marketplace.json` — Codex depends on both.
+
 ---
 
 # Plugins

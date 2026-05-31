@@ -1,0 +1,265 @@
+# Plugin Dashboard — yikusiel-codex-marketplace
+
+Total plugins: **257**  ·  External P1: 7 · External P2: 19 · External P3: 60 · External P4 (this run): 24 · OpenAI fork: 147
+
+Machine-readable copy: `plugin-dashboard.csv`. Install-priority and Account/API are heuristics — confirm before installing account-heavy tools. "Usually (OAuth)" marks OpenAI-fork connectors that typically authenticate on install.
+
+| Plugin | Category | Source | Helps with | Install priority | Account/API | Platform | Risk |
+|---|---|---|---|---|---|---|---|
+| `agent-vision` | Design | External P1 | UI/UX design & systems | Platform-specific | No | macOS-only | Low |
+| `remotion-external` | Design | External P1 | UI/UX design & systems | Install later | No | Windows OK | Low |
+| `stark` | Design | External P1 | UI/UX design & systems | Install later | No | Windows OK | Low |
+| `universal-design-principles` | Design | External P1 | UI/UX design & systems | Install later | No | Windows OK | Low |
+| `vidseeds` | Design | External P1 | UI/UX design & systems | Needs account/API | Yes | Windows OK | Low |
+| `chrome-devtools` | Tools & Integrations | External P1 | Integrations | Install later | No | Windows OK | Low |
+| `kachilu-browser` | Tools & Integrations | External P1 | Integrations | Install later | No | Windows OK | Low |
+| `agentops` | Agent Orchestration | External P2 | Multi-agent orchestration | Install first | No | Windows OK | Low |
+| `session-orchestrator` | Agent Orchestration | External P2 | Multi-agent orchestration | Install first | No | Windows OK | Low |
+| `langfuse` | Analytics | External P2 | Analytics & LLM observability | Needs account/API | Yes | Windows OK | Medium |
+| `brooks-lint` | Code Review | External P2 | Code review & PR quality | Install later | No | Windows OK | Low |
+| `pr-storyteller` | Code Review | External P2 | Code review & PR quality | Install later | No | Windows OK | Low |
+| `codebase-recon` | Coding | External P2 | Coding assistance & workflows | Install first | No | Windows OK | Low |
+| `maquette` | Design | External P2 | UI/UX design & systems | Install later | No | Windows OK | Low |
+| `convex` | Developer Tools | External P2 | General dev tooling | Install later | No | Windows OK | Low |
+| `dodopayments` | Finance | External P2 | Finance/markets/payments | Needs account/API | Yes | Windows OK | Medium |
+| `claude-mem` | Memory & Context | External P2 | Persistent memory/context | Install first | No | Windows OK | Low |
+| `standup-gen` | Productivity | External P2 | Productivity & ops workflows | Install first | No | Windows OK | Low |
+| `todo-harvest` | Productivity | External P2 | Productivity & ops workflows | Install first | No | Windows OK | Low |
+| `pm-skills` | Project Management | External P2 | Planning & PM | Install later | No | Windows OK | Low |
+| `secret-guard` | Security | External P2 | Security/secret/dependency scanning | Install later | No | Windows OK | Low |
+| `env-lint` | Testing & QA | External P2 | Testing & QA gaps | Install later | No | Windows OK | Low |
+| `test-gap` | Testing & QA | External P2 | Testing & QA gaps | Install later | No | Windows OK | Low |
+| `shopify-plugin` | Tools & Integrations | External P2 | Integrations | Needs account/API | Yes | Windows OK | Low |
+| `unslop` | Writing | External P2 | Humanized/structured writing & editing | Install first | No | Windows OK | Low |
+| `writers-loop` | Writing | External P2 | Humanized/structured writing & editing | Install first | No | Windows OK | Low |
+| `wshobson-agents` | Agent Orchestration | External P3 | Multi-agent orchestration | Install first | No | Windows OK | Low |
+| `clerk` | Auth | External P3 | Authentication & user management | Needs account/API | Yes | Windows OK | Low |
+| `n8n-mcp-synta` | Automation | External P3 | Workflow automation (n8n etc.) | Install later | No | Windows OK | Low |
+| `browser-bridge` | Browser Automation | External P3 | Browser/computer-use automation | Install later | No | Windows OK | Low |
+| `computer-use-windows` | Browser Automation | External P3 | Browser/computer-use automation | Install later | No | Windows OK | Medium |
+| `sanity` | CMS | External P3 | Headless/WordPress content management | Needs account/API | Yes | Windows OK | Low |
+| `codex-reviewer` | Code Review | External P3 | Code review & PR quality | Install later | No | Windows-unverified | Low |
+| `changelog-forge` | Coding | External P3 | Coding assistance & workflows | Install first | No | Windows OK | Low |
+| `commit-narrator` | Coding | External P3 | Coding assistance & workflows | Install first | No | Windows OK | Low |
+| `compound-engineering` | Coding | External P3 | Coding assistance & workflows | Needs account/API | Yes | Windows-unverified | Low |
+| `spec-driven` | Coding | External P3 | Coding assistance & workflows | Install first | No | Windows OK | Low |
+| `visionos-apps` | Coding | External P3 | Coding assistance & workflows | Platform-specific | No | macOS-only | Low |
+| `fiftyone` | Computer Vision | External P3 | CV datasets/models | Install later | No | Windows OK | Low |
+| `roboflow` | Computer Vision | External P3 | CV datasets/models | Needs account/API | Yes | Windows OK | Low |
+| `content-planner` | Content | External P3 | Content planning & drafting | Needs account/API | Yes | Windows OK | Low |
+| `aether` | Creative | External P3 | See plugin docs | Needs account/API | Yes | Windows OK | Low |
+| `dataproduct-builder-dbt` | Data | External P3 | See plugin docs | Needs account/API | Yes | Windows-unverified | Low |
+| `metabase` | Data & BI | External P3 | See plugin docs | Needs account/API | Yes | Windows-unverified | Low |
+| `mongodb` | Database | External P3 | Database schema/queries/ops | Needs account/API | Yes | Windows OK | Low |
+| `prisma` | Database | External P3 | Database schema/queries/ops | Install later | No | Windows OK | Low |
+| `jenkins-cli` | Deployment & CI | External P3 | Deploy, CI/CD pipelines | Needs account/API | Yes | Windows OK | Low |
+| `atlassian-forge` | Developer Tools | External P3 | General dev tooling | Needs account/API | Yes | Windows OK | Low |
+| `bitbucket-cli` | Developer Tools | External P3 | General dev tooling | Needs account/API | Yes | Windows OK | Low |
+| `mermaid` | Diagrams | External P3 | Diagrams (Mermaid) | Install first | No | Windows OK | Low |
+| `loops` | Email | External P3 | Email sending/inbox | Needs account/API | Yes | Windows OK | Low |
+| `superhuman-mail` | Email | External P3 | Email sending/inbox | Install later | No | Windows OK | Low |
+| `comfy-workflow` | Image & Video | External P3 | Image+video generation | Install later | No | Windows OK | Low |
+| `higgsfield` | Image & Video | External P3 | Image+video generation | Needs account/API | Yes | Windows-unverified | Low |
+| `pika` | Image & Video | External P3 | Image+video generation | Needs account/API | Yes | Windows OK | Low |
+| `image-studio` | Image Generation | External P3 | Image generation | Needs account/API | Yes | Windows OK | Low |
+| `nyldn-img` | Image Generation | External P3 | Image generation | Needs account/API | Yes | Windows-unverified | Low |
+| `adsense-readiness` | Marketing | External P3 | Marketing & ads workflows | Install later | No | Windows OK | Low |
+| `digital-marketing` | Marketing | External P3 | Marketing & ads workflows | Install later | No | Windows OK | Low |
+| `linkedin-skills` | Marketing | External P3 | Marketing & ads workflows | Install later | No | Windows OK | Low |
+| `context-pack` | Memory & Context | External P3 | Persistent memory/context | Install first | No | Windows OK | Low |
+| `checkly` | Monitoring | External P3 | Uptime/error monitoring | Needs account/API | Yes | Windows OK | Low |
+| `sentry-cli` | Observability | External P3 | Tracing & error observability | Needs account/API | Yes | Windows-unverified | Low |
+| `codex-obsidian` | Productivity | External P3 | Productivity & ops workflows | Platform-specific | No | macOS-only | Low |
+| `task-scheduler` | Productivity | External P3 | Productivity & ops workflows | Install first | No | Windows OK | Low |
+| `gh-project-plugin` | Project Management | External P3 | Planning & PM | Install later | No | Windows OK | Low |
+| `project-autopilot` | Project Management | External P3 | Planning & PM | Install later | No | Windows OK | Low |
+| `arxiv` | Research | External P3 | Web/literature research | Install first | No | Windows OK | Low |
+| `codex-autoresearch` | Research | External P3 | Web/literature research | Install first | No | Windows OK | Low |
+| `gpt-researcher` | Research | External P3 | Web/literature research | Needs account/API | Yes | Windows OK | Medium |
+| `gsearch` | Research | External P3 | Web/literature research | Install first | No | Windows OK | Low |
+| `papersflow` | Research | External P3 | Web/literature research | Needs account/API | Yes | Windows OK | Low |
+| `codex-seo` | SEO | External P3 | SEO audits & content optimization | Needs account/API | Yes | Windows OK | Low |
+| `enterprise-seo` | SEO | External P3 | SEO audits & content optimization | Install later | No | Windows OK | Low |
+| `vibeprospecting` | Sales & CRM | External P3 | Sales prospecting/CRM | Needs account/API | Yes | Windows OK | Low |
+| `crawlbase` | Scraping | External P3 | Web scraping/data extraction | Needs account/API | Yes | Windows OK | Medium |
+| `agentic-security` | Security | External P3 | Security/secret/dependency scanning | Install later | No | Windows OK | Medium |
+| `armorcodex` | Security | External P3 | Security/secret/dependency scanning | Needs account/API | Yes | Windows-unverified | Low |
+| `axonflow` | Security | External P3 | Security/secret/dependency scanning | Needs account/API | Yes | Windows-unverified | Low |
+| `deps-doctor` | Security | External P3 | Security/secret/dependency scanning | Install later | No | Windows OK | Low |
+| `fortify` | Security | External P3 | Security/secret/dependency scanning | Needs account/API | Yes | Windows OK | Low |
+| `stackhawk` | Security | External P3 | Security/secret/dependency scanning | Needs account/API | Yes | Windows OK | Low |
+| `spreadsheet-peek` | Spreadsheets | External P3 | Spreadsheet/reporting | Install later | No | Windows OK | Low |
+| `flaky-detector` | Testing & QA | External P3 | Testing & QA gaps | Install later | No | Windows OK | Low |
+| `video-vision` | Video Review | External P3 | Video review/analysis | Needs account/API | Yes | Windows OK | Low |
+| `base44` | Web Apps | External P3 | Full-stack app building | Needs account/API | Yes | Windows OK | Low |
+| `drpc` | APIs & Communications | External P4 (this run) | API/comms (SMS/voice/IoT) | Needs account/API | Yes | Windows OK | Medium |
+| `seam` | APIs & Communications | External P4 (this run) | API/comms (SMS/voice/IoT) | Needs account/API | Yes | Windows OK | Medium |
+| `twilio-dev-kit` | APIs & Communications | External P4 (this run) | API/comms (SMS/voice/IoT) | Needs account/API | Yes | Windows OK | Medium |
+| `llm-router` | Agent Orchestration | External P4 (this run) | Multi-agent orchestration | Install first | No | Windows OK | Medium |
+| `n8n-codex` | Automation | External P4 (this run) | Workflow automation (n8n etc.) | Needs account/API | Yes | Windows OK | Medium |
+| `accelerate-wp` | CMS | External P4 (this run) | Headless/WordPress content management | Needs account/API | Yes | Windows OK | Medium |
+| `datocms` | CMS | External P4 (this run) | Headless/WordPress content management | Needs account/API | Yes | Windows OK | Medium |
+| `alation` | Data & Analytics | External P4 (this run) | Data catalog/analytics | Needs account/API | Yes | Windows-unverified | Medium |
+| `azure-documentdb` | Database | External P4 (this run) | Database schema/queries/ops | Needs account/API | Yes | Windows OK | Medium |
+| `couchbase` | Database | External P4 (this run) | Database schema/queries/ops | Install later | No | Windows OK | Low |
+| `kurrent` | Database | External P4 (this run) | Database schema/queries/ops | Install later | No | Windows OK | Low |
+| `valkey` | Database | External P4 (this run) | Database schema/queries/ops | Install later | No | Windows OK | Low |
+| `truefoundry` | Deployment & CI | External P4 (this run) | Deploy, CI/CD pipelines | Needs account/API | Yes | Windows-unverified | Medium |
+| `microsoft-docs` | Documentation | External P4 (this run) | Authoritative docs search | Install first | No | Windows OK | Low |
+| `stripe-link` | Finance | External P4 (this run) | Finance/markets/payments | Needs account/API | Yes | Windows OK | Medium |
+| `tradingview` | Finance | External P4 (this run) | Finance/markets/payments | Install later | No | Windows OK | Low |
+| `spotify-ads` | Marketing | External P4 (this run) | Marketing & ads workflows | Needs account/API | Yes | Windows-unverified | Medium |
+| `github-librarian` | Research | External P4 (this run) | Web/literature research | Install first | No | Windows OK | Low |
+| `citecheck` | Research & Fact-Checking | External P4 (this run) | Research + citation verification | Install first | No | Windows OK | Low |
+| `firecrawl` | Scraping & Research | External P4 (this run) | Web scraping/crawling for research | Needs account/API | Yes | Windows OK | Medium |
+| `burpsuite-bridge` | Security | External P4 (this run) | Security/secret/dependency scanning | Needs account/API | Yes | Windows OK | Medium |
+| `zscaler` | Security | External P4 (this run) | Security/secret/dependency scanning | Install later | No | Windows OK | Low |
+| `astro` | Web Frameworks | External P4 (this run) | Frontend/web framework dev | Install later | No | Windows OK | Low |
+| `litestar` | Web Frameworks | External P4 (this run) | Frontend/web framework dev | Install later | No | Windows OK | Low |
+| `box` | (none) | OpenAI fork | See plugin docs | Install later | Usually (OAuth) | Windows OK | Low |
+| `google-drive` | (none) | OpenAI fork | See plugin docs | Install later | Usually (OAuth) | Windows OK | Low |
+| `build-ios-apps` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `build-macos-apps` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `build-web-apps` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `build-web-data-visualization` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `circleci` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `cloudflare` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `cloudinary` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `coderabbit` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `expo` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `game-studio` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `github` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `hostinger` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `hugging-face` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `marcopolo` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `neon-postgres` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `netlify` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `plugin-eval` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `quicknode` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `render` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `sendgrid` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `sentry` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `statsig` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `supabase` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `superpowers` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `temporal` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `test-android-apps` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `twilio-developer-kit` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `vantage` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `vercel` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `yepcode` | Coding | OpenAI fork | Coding assistance & workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `biorender` | Design | OpenAI fork | UI/UX design & systems | Install later | Usually (OAuth) | Windows OK | Low |
+| `canva` | Design | OpenAI fork | UI/UX design & systems | Install later | Usually (OAuth) | Windows OK | Low |
+| `figma` | Design | OpenAI fork | UI/UX design & systems | Install later | Usually (OAuth) | Windows OK | Low |
+| `heygen` | Design | OpenAI fork | UI/UX design & systems | Install later | Usually (OAuth) | Windows OK | Low |
+| `hyperframes` | Design | OpenAI fork | UI/UX design & systems | Install later | Usually (OAuth) | Windows OK | Low |
+| `remotion` | Design | OpenAI fork | UI/UX design & systems | Install later | Usually (OAuth) | Windows OK | Low |
+| `datadog` | Developer Tools | OpenAI fork | General dev tooling | Install later | Usually (OAuth) | Windows OK | Low |
+| `openai-developers` | Engineering | OpenAI fork | Engineering workflows | Install later | Usually (OAuth) | Windows OK | Low |
+| `cogedim` | Lifestyle | OpenAI fork | Lifestyle/consumer | Install later | Usually (OAuth) | Windows OK | Low |
+| `finn` | Lifestyle | OpenAI fork | Lifestyle/consumer | Install later | Usually (OAuth) | Windows OK | Low |
+| `myregistry-com` | Lifestyle | OpenAI fork | Lifestyle/consumer | Install later | Usually (OAuth) | Windows OK | Low |
+| `setu-bharat-connect-billpay` | Lifestyle | OpenAI fork | Lifestyle/consumer | Install later | Usually (OAuth) | Windows OK | Low |
+| `weatherpromise` | Lifestyle | OpenAI fork | Lifestyle/consumer | Install later | Usually (OAuth) | Windows OK | Low |
+| `airtable` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `amplitude` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `apollo` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `asana` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `atlassian-rovo` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `attio` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `brand24` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `brex` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `calendly` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `carta-crm` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `channel99` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `circleback` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `clay` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `clickup` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `close` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `common-room` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `conductor` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `coupler-io` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `coveo` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `datasite` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `deepnote` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `demandbase` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `docket` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `docusign` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `domotz-preview` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `dovetail` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `egnyte` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `fireflies` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `fyxer` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `gmail` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `google-calendar` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `granola` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `happenstance` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `help-scout` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `hg-insights` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `highlevel` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `hubspot` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `jam` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `keybid-puls` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `linear` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `mem` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `meticulate` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `mixpanel` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `mixpanel-headless` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `monday-com` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `motherduck` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `network-solutions` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `notion` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `omni-analytics` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `otter-ai` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `outlook-calendar` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `outlook-email` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `pipedrive` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `pylon` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `ranked-ai` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `razorpay` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `read-ai` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `responsive` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `rox` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `semrush` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `sharepoint` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `signnow` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `similarweb` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `skywatch` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `slack` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `streak` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `stripe` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `teams` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `teamwork-com` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `thoughtspot` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `united-rentals` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `waldo` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `windsor-ai` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `zoom` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `zoominfo` | Productivity | OpenAI fork | Productivity & ops workflows | Install first | Usually (OAuth) | Windows OK | Low |
+| `aiera` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `alpaca` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `binance` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `cb-insights` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `cube` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `daloopa` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `dow-jones-factiva` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `factset` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `govtribe` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `life-science-research` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `lseg` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `midpage` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `moody-s` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `morningstar` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `mt-newswires` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `particl-market-research` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `pitchbook` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `policynote` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `quartr` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `readwise` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `s-p` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `scite` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `taxdown` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `third-bridge` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `tinman-ai` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `zotero` | Research | OpenAI fork | Web/literature research | Install first | Usually (OAuth) | Windows OK | Low |
+| `codex-security` | Security | OpenAI fork | Security/secret/dependency scanning | Install later | Usually (OAuth) | Windows OK | Low |

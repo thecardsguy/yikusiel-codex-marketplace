@@ -1,41 +1,44 @@
 # Creative / Image / Video / Identity Tools
 
-Focused view of the marketplace's creative capabilities and the honest state of identity/character consistency for Codex.
+Practical view of the marketplace's creative capabilities. **No images or videos are generated here** — this catalogs installable tools.
 
-## What's installable now (added across all runs)
-
+## Already installed (across all runs)
 | Plugin | Capability | Needs | Platform |
 |---|---|---|---|
-| `nyldn-img` | Real image generation — OpenAI **gpt-image-2** + Google **Gemini** image | OpenAI and/or Gemini API key | Win unverified |
-| `higgsfield` | Image **+ video** gen across 30+ models (Seedance, Veo, Kling, Nano Banana, GPT Image) + **Soul ID** face-consistent identity + product/marketplace shoots | paid Higgsfield account (CLI login) | Win unverified |
-| `pika` | Pika creative suite — video, image, audio/voice, lipsync, captions, brand identity (58 MCP tools) | Pika account (OAuth) + credits | Windows OK |
-| `aether` | Visual memory + prompt refinement for image gen | API | Windows OK |
-| `image-studio` | Image editing/studio workflows | API | Windows OK |
-| `comfy-workflow` | Manage/validate/convert **ComfyUI** workflows (local image/video gen) | local ComfyUI install | Windows OK |
-| `roboflow` | Computer-vision pipelines: dataset, label, train, infer (official Roboflow) | Roboflow API key | Windows OK |
-| `fiftyone` | CV dataset curation/evaluation (Voxel51) | — | Windows OK |
+| `nyldn-img` | Image gen — OpenAI gpt-image-2 + Gemini | API keys | Win unverified |
+| `higgsfield` | Image **+ video** (30+ models) + **Soul ID** face-consistent identity + product shoots | paid Higgsfield acct | Win unverified |
+| `pika` | Pika suite — video, image, audio, lipsync, captions, brand (58 tools) | Pika OAuth + credits | Windows OK |
+| `comfy-workflow` | Manage/validate **ComfyUI** workflows (local image/video gen) | local ComfyUI | Windows OK |
+| `roboflow` | Computer-vision pipelines (dataset/label/train/infer) | Roboflow key | Windows OK |
+| `fiftyone` | CV dataset curation/evaluation | — | Windows OK |
+| `image-studio` | Image editing/studio | API | Windows OK |
 | `video-vision` | Video review / vision analysis | API | Windows OK |
-| `maquette` | Image-guided web design → coded components + tokens | (image backend) | Windows OK |
+| `aether` | Visual memory + prompt refinement | API | Windows OK |
+| `maquette` | Image-guided web design → coded components | (image backend) | Windows OK |
 | `remotion-external` | Programmatic video from React/Remotion | — | Windows OK |
 | `vidseeds` | Video SEO/metadata/thumbnails for existing videos | VidSeeds PAT | Windows OK |
 | `agent-vision` | Local camera frames | — | **macOS-only** |
-| `hyperframes` *(in fork)* | HTML/CSS → MP4 video (HeyGen HyperFrames) | — | Windows OK |
-| `heygen` *(in fork)* | HeyGen avatar video + 175-language dubbing | HeyGen API key | Windows OK |
+| `hyperframes` *(fork)* | HTML/CSS → MP4 video | — | Windows OK |
+| `heygen` *(fork)* | HeyGen avatar video + 175-lang dubbing | HeyGen key | Windows OK |
 
-## Identity / height / body / character consistency — honest finding
-**There is still NO dedicated Codex-native plugin (`.codex-plugin/plugin.json`) whose purpose is identity-lock, height-lock, body-size continuity, or same-person video.** Confirmed again via GitHub-wide code search (May 2026).
+## Added this run
+No new **image/video/identity-native** plugin was added this run (none surfaced that wasn't already covered). New adds that *support* creative work: `firecrawl` (scrape references/competitor visuals), `citecheck` (verify sourced claims), `microsoft-docs` (Azure OpenAI image APIs). For screenshots/visual & browser review you already have `chrome-devtools`, `kachilu-browser`, `browser-bridge`, `computer-use-windows`.
 
-**However, the closest *real, installable* options are now in your marketplace:**
-1. **`higgsfield` → Soul ID** — trains a face-faithful identity model from photos and reuses it across image/video generations. This is the most practical path to character consistency today. (Needs a paid Higgsfield account.)
-2. **`heygen`** *(already in the fork)* — persistent avatar identity for talking-head/presenter video.
+## Install first (creative)
+1. `maquette` + `comfy-workflow` (zero remote account if you run ComfyUI locally) · `fiftyone` · `remotion-external`.
+2. Then, when you have accounts: `pika` → `nyldn-img` → `higgsfield`.
 
-**Toolkits that exist but are NOT Codex plugins (would need wrapping):**
-- `awesome-genmedia/skills` — Claude-format; wraps **InstantID, IP-Adapter, PhotoMaker, ControlNet, FLUX LoRA, face-swap, StoryDiffusion** via eachlabs.ai. Closest to true identity/character control, but Claude-plugin format → needs a Codex wrapper.
-- `hunix/HoC-Republic` — proprietary format; MagicAnimate/OmniGen/StoryDiffusion/FaceFusion/DeepFaceLab. Experimental, 0 stars — treat with caution.
+## Requires accounts
+`pika`, `higgsfield`, `nyldn-img`, `aether`, `image-studio`, `video-vision`, `roboflow`, `vidseeds`, fork `heygen`.
 
-## Best path for identity / height / body continuity
-1. **Now:** use `higgsfield` Soul ID (reusable identity) for consistent character across generations; use `heygen` for avatar/presenter continuity.
-2. **If you need ControlNet/IP-Adapter/InstantID-level control:** wrap `awesome-genmedia/skills` (Claude→Codex) — requires a small wrapper plugin + eachlabs.ai key. (Custom-build; needs your approval.)
-3. **Height/body-size continuity specifically:** no off-the-shelf solution in any agent ecosystem. Achievable via ComfyUI (`comfy-workflow`) with ControlNet/pose+reference, or via a custom skill encoding your continuity rules — **custom build, your approval required.**
+## Identity / face / body / height / scene continuity — honest status
+**Still NO dedicated Codex-native plugin** for identity-lock, face consistency, body/height/scale continuity, or same-person video. Re-confirmed this run.
 
-> Per your standing instruction, no custom identity/height skills were created. The above are real, installable, ready-made options plus an honest gap statement.
+**Best real, installable paths today:**
+1. **`higgsfield` → Soul ID** — trains a face-faithful identity model, reusable across image/video. Closest thing to same-person consistency.
+2. **`heygen`** *(fork)* — persistent avatar identity for presenter/talking-head video.
+3. **`comfy-workflow`** — drive a local ComfyUI graph with ControlNet/IP-Adapter/pose+reference for fine-grained face/pose/scene control (you supply the ComfyUI setup).
+
+**Needs wrapping (closest dedicated toolkit, not Codex-native):** `awesome-genmedia/skills` — InstantID, IP-Adapter, PhotoMaker, ControlNet, LoRA, StoryDiffusion (via eachlabs.ai). It's a Claude-plugin → would need a small Codex wrapper (see `skill-wrapping-backlog.md`).
+
+**Still needs a custom skill later (your approval):** true **height / body-size continuity** across shots has no off-the-shelf solution in any agent ecosystem — it would be a bespoke skill encoding your continuity rules on top of ComfyUI or Soul ID.

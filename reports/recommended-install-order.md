@@ -1,33 +1,30 @@
 # Recommended Install Order (in Codex)
 
-In Codex: **Plugins → `yikusiel-codex-marketplace` → reopen/refresh → install each with `+`.**
-Plugins marked **🔑** need an API key / account / OAuth *when you use them* (adding/installing the listing is free; you'll be prompted on first use). Plugins marked **🍎 macOS** or **🪟 Windows** are platform-specific.
+In Codex: **Plugins → `yikusiel-codex-marketplace` → reopen/refresh → install with `+`.** Install top-down; **don't bulk-install account/API-heavy tools (Tier 8)** — add those only when you'll use them. 🔑 = needs key/account. See `api-and-account-requirements.md` and `plugin-dashboard.md`.
 
 ## Tier 1 — Install first (zero-config, broadly useful)
-`writers-loop`, `unslop` (content polish) · `claude-mem`, `context-pack` (memory) · `pm-skills`, `agentops`, `session-orchestrator` (workflow/PM) · `standup-gen`, `todo-harvest`, `task-scheduler` (productivity) · `codebase-recon`, `wshobson-agents` (coding) · `mermaid` (diagrams) · `spreadsheet-peek` (reporting).
+`writers-loop` (writing) · `unslop` (de-AI text) · `claude-mem` + `context-pack` (memory) · `agentops` + `session-orchestrator` (orchestration) · `pm-skills` (PM) · `wshobson-agents` (subagents) · `microsoft-docs` (docs search) · `mermaid` (diagrams) · `spreadsheet-peek` (reporting) · `standup-gen` + `todo-harvest` (productivity) · `codebase-recon` + `brooks-lint` (coding).
 
-## Tier 2 — Coding & quality tools
-`brooks-lint`, `codex-reviewer`, `pr-storyteller`, `commit-narrator`, `changelog-forge` (review/git) · `test-gap`, `flaky-detector`, `env-lint` (testing/QA) · `secret-guard`, `deps-doctor` (security hygiene) · `spec-driven`, `compound-engineering` (methodology) · `gh-project-plugin`, `project-autopilot` (project automation).
+## Tier 2 — Writing / content / SEO
+`content-planner` (outlines) · `codex-seo` 🔑 + `enterprise-seo` (audits) · `semrush` 🔑 + `similarweb` 🔑 (keywords/competitors) · `digital-marketing` · `adsense-readiness` · `linkedin-skills`.
 
-## Tier 3 — Business / content / SEO
-`enterprise-seo`, `digital-marketing`, `adsense-readiness`, `content-planner`, `linkedin-skills` · `shopify-plugin` · `superhuman-mail` · 🔑 `codex-seo`, `vibeprospecting`, `loops`.
+## Tier 3 — Coding / QA / security
+`codex-reviewer` + `pr-storyteller` + `commit-narrator` + `changelog-forge` · `test-gap` + `flaky-detector` + `env-lint` · `secret-guard` + `deps-doctor` + `agentic-security` · `spec-driven` + `compound-engineering`.
 
-## Tier 4 — Creative / image / video
-`maquette`, `remotion-external`, `stark`, `universal-design-principles`, `fiftyone` · `comfy-workflow` (needs local ComfyUI) · 🔑 `pika`, `nyldn-img`, `higgsfield` (Soul ID identity), `aether`, `image-studio`, `video-vision`, `roboflow`, `vidseeds`.
+## Tier 4 — Business / productivity / research
+`gpt-researcher` 🔑 + `firecrawl` 🔑 (research/scrape) · `citecheck` + `github-librarian` + `arxiv` + `codex-autoresearch` + `zotero` (sources) · fork: `factset` 🔑 `dow-jones-factiva` 🔑 `morningstar` 🔑 `cb-insights` 🔑 `quartr` 🔑 `scite` `readwise` · `tradingview` · `gh-project-plugin` + `project-autopilot` + `task-scheduler` · fork: `notion` `gmail` `google-calendar` `google-drive`.
 
-## Tier 5 — Install only when you have the account / API key
-🔑 **Data/DB/infra:** `metabase`, `dataproduct-builder-dbt`, `mongodb`, `sanity`, `clerk`, `prisma`, `base44`, `convex`, `checkly`, `bitbucket-cli`, `jenkins-cli`, `atlassian-forge`.
-🔑 **Security:** `stackhawk`, `fortify`, `armorcodex`, `axonflow`.
-🔑 **Research/observability:** `gpt-researcher`, `papersflow`, `sentry-cli`, `langfuse`, `crawlbase`.
-🔑 **Finance/commerce:** `dodopayments`.
+## Tier 5 — Website / app building
+`supabase` 🔑 + `convex` 🔑 + `prisma` 🔑 + `mongodb` 🔑 + `couchbase` + `valkey` + `kurrent` + `azure-documentdb` 🔑 (data) · `clerk` 🔑 (auth) · `vercel` 🔑 + `netlify` + `cloudflare` (deploy) · `astro` + `litestar` (frameworks) · `maquette` + `stark` + `universal-design-principles` (UI/UX) · `metabase` 🔑 + `dataproduct-builder-dbt` 🔑 (data/BI).
 
-## Tier 6 — Optional / platform-specific
-🍎 **macOS only:** `agent-vision`, `codex-obsidian`, `visionos-apps`.
-🪟 **Windows-oriented:** `computer-use-windows` (computer use), `kachilu-browser` (WSL2 Chrome).
-**Windows-unverified (test first):** `nyldn-img`, `higgsfield`, `metabase`, `dataproduct-builder-dbt`, `codex-reviewer`, `armorcodex`, `axonflow`, `compound-engineering`, `sentry-cli`.
+## Tier 6 — API discovery / integration
+`microsoft-docs` + `github-librarian` + `firecrawl` 🔑 (find/evaluate APIs) · `llm-router` (route LLM APIs) · `checkly` 🔑 + `datadog` 🔑 + `sentry-cli` 🔑 (test/monitor) · `stackhawk` 🔑 + `zscaler` 🔑 + `fortify` 🔑 + `burpsuite-bridge` (API security) · specific APIs: `twilio-dev-kit` 🔑 `stripe-link` 🔑 `seam` 🔑 `drpc` 🔑.
 
-## Suggested starting set for your businesses
-- **The Cards Guy (content/SEO):** `writers-loop`, `unslop`, `content-planner`, `adsense-readiness`, `enterprise-seo`, then 🔑 `codex-seo`.
-- **HY Credit / DisputeIQ:** `writers-loop`, `unslop`, `secret-guard`, `session-orchestrator`, `agentops`, `claude-mem`.
-- **AI scheduling / automation:** `session-orchestrator`, `agentops`, `task-scheduler`, `n8n-mcp-synta`, 🔑 `langfuse`.
-- **Creative:** `maquette`, `comfy-workflow`, then 🔑 `nyldn-img` / `pika` / `higgsfield`.
+## Tier 7 — Creative / image / video
+`maquette` + `comfy-workflow` (local) + `fiftyone` + `remotion-external` · 🔑 `pika` `nyldn-img` `higgsfield` (Soul-ID) `aether` `image-studio` `video-vision` `roboflow` `vidseeds`.
+
+## Tier 8 — Account/API-heavy (install only when you'll use them)
+🔑 `dodopayments` `langfuse` `base44` `alation` `accelerate-wp` `spotify-ads` `vibeprospecting` `loops` `crawlbase` `bitbucket-cli` `jenkins-cli` `atlassian-forge` `n8n-codex` `n8n-mcp-synta` `armorcodex` `axonflow` `truefoundry` `shopify-plugin`.
+
+## Tier 9 — Platform-specific / optional
+🍎 `agent-vision` `codex-obsidian` `visionos-apps` (macOS) · 🪟 `computer-use-windows` `kachilu-browser` (Windows/WSL2).
