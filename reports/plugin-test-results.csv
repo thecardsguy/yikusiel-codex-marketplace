@@ -1,0 +1,16 @@
+Plugin,Installed?,Test run?,Passed?,What worked,What failed,Fix needed,Install priority going forward,Keep installed?
+writers-loop,Pending,Pending,Pending,,,,Core (first batch),Pending
+unslop,Pending,Pending,Pending,,,,Core (first batch),Pending
+claude-mem,Pending,Pending,Pending,,,,Core (first batch),Pending
+pm-skills,Pending,Pending,Pending,,,,Core (first batch),Pending
+agentops,Pending,Pending,Pending,,,,Core (first batch),Pending
+session-orchestrator,Pending,Pending,Pending,,,,Core (first batch),Pending
+microsoft-docs,Pending,Pending,Pending,,,,Core (first batch),Pending
+citecheck,Pending,Pending,Pending,,,,Core (first batch),Pending
+github-librarian,Pending,Pending,Pending,,,,Core (first batch),Pending
+codebase-recon,Pending,Pending,Pending,,,,Core (first batch),Pending
+brooks-lint,Pending,Pending,Pending,,,,Core (first batch),Pending
+commit-narrator,Pending,Pending,Pending,,,,Core (first batch),Pending
+secret-guard,Pending,Pending,Pending,,,,Core (first batch),Pending
+env-lint,Pending,Pending,Pending,,,,Core (first batch),Pending
+mermaid,Pending,Pending,Pending,,,,Core (first batch),Pending
