@@ -2,7 +2,7 @@
 
 Fill this in by hand after installing/testing the first 15. Keep it short — it drives the next step (`reports/after-first-15-next-step.md`).
 
-The 15: `writers-loop`, `unslop`, `claude-mem`, `pm-skills`, `agentops`, `session-orchestrator`, `microsoft-docs`, `citecheck`, `github-librarian`, `codebase-recon`, `brooks-lint`, `commit-narrator`, `secret-guard`, `env-lint`, `mermaid`.
+The 15: `writers-loop`, `unslop`, `claude-mem`, `pm-skills`, `agentops`, `session-orchestrator`, `microsoft-docs`, `citecheck`, `github-librarian`, `codebase-recon`, `brooks-lint`, `commit-narrator`, `secret-guard`, `env-lint`, `mermaid-js-for-agents`.
 
 ---
 

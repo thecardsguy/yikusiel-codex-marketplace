@@ -34,7 +34,7 @@ Goal: same-person identity, face consistency, and (hardest) body/height/scale co
 **What you can do with existing plugins (no build):**
 - **`higgsfield` Soul-ID** — best current path to same-person/face consistency (trained identity model, reused across shots). *Paid Higgsfield account.*
 - **`heygen`** — avatar/presenter continuity. *HeyGen account.*
-- **`comfy-workflow`** — drive ControlNet / IP-Adapter / InstantID / PuLID locally for fine control. *Local ComfyUI; no cloud account.*
+- **`comfy-workflow-mcp`** — drive ControlNet / IP-Adapter / InstantID / PuLID locally for fine control. *Local ComfyUI; no cloud account.*
 
 **What requires wrapping:**
 - **`awesome-genmedia/skills`** (InstantID, IP-Adapter, PhotoMaker, ControlNet, LoRA, StoryDiffusion via eachlabs.ai) — a Claude-format plugin → needs a small Codex wrapper. **This is the recommended first wrapper** (closest ready-made identity toolkit; ~1 small plugin).

@@ -1,6 +1,6 @@
 # Coding / Project Test Script
 
-Tests `codebase-recon`, `brooks-lint`, `commit-narrator`, `secret-guard`, `env-lint`, `mermaid` on a real repo. **Start read-only** — none of these should change your code in the test (only `commit-narrator` touches git, and only to read the diff).
+Tests `codebase-recon`, `brooks-lint`, `commit-narrator`, `secret-guard`, `env-lint`, `mermaid-js-for-agents` on a real repo. **Start read-only** — none of these should change your code in the test (only `commit-narrator` touches git, and only to read the diff).
 
 > Run these from inside a repo you don't mind exploring (e.g. a copy of a Cards Guy / DisputeIQ project). Read-only steps first; do the staged-change steps last.
 
@@ -19,7 +19,7 @@ Tests `codebase-recon`, `brooks-lint`, `commit-narrator`, `secret-guard`, `env-l
 
 **Pass if:** env diff shows only key names; `secret-guard` flags/redacts (test it by adding a fake `STRIPE_KEY=sk_test_fake123` to a staged file first).
 
-## 4. Architecture diagram — `mermaid`
+## 4. Architecture diagram — `mermaid-js-for-agents`
 > "Create a Mermaid diagram (flowchart TD, in a ```mermaid code block) of this app's architecture: frontend, backend/API, database, auth, hosting, and external services."
 
 **Pass if:** valid Mermaid you can paste into a renderer.
@@ -30,7 +30,7 @@ Tests `codebase-recon`, `brooks-lint`, `commit-narrator`, `secret-guard`, `env-l
 **Pass if:** the message reflects the actual diff (not generic).
 
 ## Suggested order & safety
-1. **Read-only first:** `codebase-recon` → `brooks-lint` → `env-lint` → `secret-guard` → `mermaid`. None should write files.
+1. **Read-only first:** `codebase-recon` → `brooks-lint` → `env-lint` → `secret-guard` → `mermaid-js-for-agents`. None should write files.
 2. **Then git-aware:** `commit-narrator` (reads staged diff; writes only a message you choose to use).
 3. If any plugin tries to **edit files** during these tests, stop it and note the issue — these should be advisory/read-only here.
 

@@ -17,18 +17,18 @@ How tools across the ecosystem map to **this Codex marketplace** vs. things bett
 - Needs wrapping / Claude-only: a dedicated brand-voice skill pack would help — none found as a Codex plugin (see wrapping backlog).
 
 ## Research / search
-- Codex-addable (added): **`gpt-researcher`**, **`firecrawl`**, **`citecheck`**, **`github-librarian`**, **`arxiv`**, **`codex-autoresearch`**, **`papersflow`**, plus fork research connectors (`scite`, `readwise`, `factset`, `dow-jones-factiva`, `morningstar`, `cb-insights`, `quartr`, `aiera`, `daloopa`).
+- Codex-addable (added): **`gpt-researcher`**, **`firecrawl`**, **`citecheck`**, **`github-librarian`**, **`codex-autoresearch`**, **`papersflow-codex-plugin`**, plus fork research connectors (`scite`, `readwise`, `factset`, `dow-jones-factiva`, `morningstar`, `cb-insights`, `quartr`, `aiera`, `daloopa`).
 - MCP-only (backlog): **`tavily-ai/tavily-mcp`**, **`exa-labs/exa-mcp-server`**, **Perplexity** — high-quality search APIs; connect as MCP servers.
 
 ## Website / app building
-- Codex-addable (added): **`astro`**, **`litestar`**, **`supabase`**, **`convex`**, **`prisma`**, **`mongodb`**, **`couchbase`**, **`valkey`**, **`kurrent`**, **`azure-documentdb`**, **`clerk`**, **`vercel`**, **`netlify`**, **`cloudflare`**, **`truefoundry`**, **`maquette`**, **`stark`**, **`universal-design-principles`**.
+- Codex-addable (added): **`astro-codex-plugin`**, **`litestar`**, **`supabase`**, **`convex`**, **`prisma`**, **`mongodb`**, **`couchbase-skills`**, **`valkey-skills`**, **`kurrent`**, **`documentdb`**, **`clerk-skills`**, **`vercel`**, **`netlify`**, **`cloudflare`**, **`truefoundry`**, **`maquette`**, **`stark`**, **`universal-design-principles`**.
 
 ## API discovery / integration
-- Codex-addable (added): **`microsoft-docs`**, **`github-librarian`**, **`firecrawl`**, **`checkly`**, **`stackhawk`**, **`datadog`**, **`sentry-cli`**, **`llm-router`**, **`seam`**, **`twilio-dev-kit`**, **`stripe-link`**, **`drpc`**.
+- Codex-addable (added): **`microsoft-docs`**, **`github-librarian`**, **`firecrawl`**, **`checkly`**, **`stackhawk`**, **`datadog`**, **`sentry-cli`**, **`llm-router`**, **`seam`**, **`twilio-developer-kit`**, **`link`**, **`drpc-agent-skills`**.
 - MCP-only (backlog): **`postman`**, **`bruno`** (API clients) — connect/CLI, not found as Codex plugins.
 
 ## Identity / video / creative
-- Codex-addable (added): **`pika`**, **`higgsfield`** (Soul ID identity), **`nyldn-img`**, **`comfy-workflow`**, **`roboflow`**, **`fiftyone`**, **`image-studio`**, **`video-vision`**, **`aether`**, **`maquette`**; fork: **`hyperframes`**, **`heygen`**.
+- Codex-addable (added): **`pika`**, **`higgsfield`** (Soul ID identity), **`img`**, **`comfy-workflow-mcp`**, **`roboflow`**, **`fiftyone-skills`**, **`image-studio-mcp`**, **`codex-video-vision`**, **`aether`**, **`maquette`**; fork: **`hyperframes`**, **`heygen`**.
 - Needs wrapping (Claude-format): **`awesome-genmedia/skills`** — InstantID, IP-Adapter, PhotoMaker, ControlNet, LoRA, StoryDiffusion via eachlabs.ai. **Closest path to true identity/character/body control.**
 
 ## Analytics / data
@@ -36,7 +36,7 @@ How tools across the ecosystem map to **this Codex marketplace** vs. things bett
 - Needs wrapping (Claude-format): **`PostHog/skills`** (product analytics; ships `.claude-plugin`, 11 sub-plugins) → wrap or use in Claude.
 
 ## Multi-agent / memory / orchestration
-- Codex-addable (added): **`session-orchestrator`**, **`agentops`**, **`claude-mem`**, **`context-pack`**, **`wshobson-agents`**, **`compound-engineering`**, **`spec-driven`**.
+- Codex-addable (added): **`session-orchestrator`**, **`agentops`**, **`claude-mem`**, **`context-pack`**, **`developer-essentials`**, **`compound-engineering`**, **`spec-driven`**.
 
 ## Recommended next actions
 - **Connect as MCP (no wrapping needed):** Tavily, Exa, Perplexity, Postman/Bruno — add to your Codex MCP config when you want them.

@@ -44,7 +44,7 @@ One short prompt per plugin. Install the plugin in Codex first, then paste its p
 ### `env-lint`
 > Compare my .env against .env.example and list missing or extra keys — names only, no values.
 
-### `mermaid`
+### `mermaid-js-for-agents`
 > Create a Mermaid architecture diagram (flowchart TD, in a ```mermaid code block) for: React/Vite frontend + Supabase backend + Vercel hosting + Clerk auth.
 
 ---

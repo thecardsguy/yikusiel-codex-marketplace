@@ -8,13 +8,13 @@
 
 **What this is.** `yikusiel-codex-marketplace` is your private plugin marketplace for Codex (and usable in Claude Code / other agents). It started as a fork of OpenAI's official marketplace and has been expanded with carefully-vetted external plugins.
 
-**How big.** **257 plugins** — 147 official OpenAI plugins (vendored locally) + 110 external plugins added in four curated waves. Every external plugin was checked: it has a real `.codex-plugin/plugin.json`, the manifest is reachable, it's not a broken stub, not a duplicate, and not high-risk.
+**How big.** **254 plugins** — 147 official OpenAI plugins (vendored locally) + 107 external plugins added across curated waves. Every external plugin was checked: it has a real `.codex-plugin/plugin.json`, the manifest is reachable, it's not a broken stub, not a duplicate, and not high-risk.
 
 **What it helps you do.** Humanized + expert writing, credit-card/finance research, SEO, fact-checking, website/app building (frontend, databases, auth, deploy), API discovery and integration, testing/QA/security, automation and scheduling, research, and creative image/video workflows.
 
 **Install first.** A small zero-config set that's useful immediately and needs **no accounts** — see §2.
 
-**Avoid installing until ready.** Anything that needs a paid account or API key (≈47 external plugins), powerful tools like `computer-use-windows` and `burpsuite-bridge`, and macOS-only tools (you're on Windows). Don't bulk-install — add account-heavy tools one at a time when you'll actually use them. See §7–8.
+**Avoid installing until ready.** Anything that needs a paid account or API key (≈47 external plugins), powerful tools like `windows-computer-use` and `burpsuite-mcp-bridge`, and macOS-only tools (you're on Windows). Don't bulk-install — add account-heavy tools one at a time when you'll actually use them. See §7–8.
 
 > **Golden rules:** never rename the marketplace (`yikusiel-codex-marketplace`) or move `.agents/plugins/marketplace.json`. Adding a plugin never logs you in — you only authenticate when you choose to install + use it.
 
@@ -42,7 +42,7 @@ All zero-config, no account needed, broadly useful. Start here.
 | `secret-guard` | Pre-commit secret scanner | Protects keys/PII | No |
 | `env-lint` | Checks `.env` vs `.env.example` | Avoids config bugs | No |
 | `test-gap` | Finds untested changed lines | QA before shipping | No |
-| `mermaid` | Diagrams from text | Docs & planning | No |
+| `mermaid-js-for-agents` | Diagrams from text | Docs & planning | No |
 | `spreadsheet-peek` | Inspect spreadsheets/reporting | Quick data checks | No |
 
 ---
@@ -54,7 +54,7 @@ Goal: **expert, humanized, factually-careful U.S. credit-card content.** The AI 
 - **Humanized writing:** `writers-loop` (draft in your voice), `unslop` (remove AI tells — run last), `content-planner` (outline first).
 - **Research:** `firecrawl` (scrape issuer/competitor pages — *needs a free-tier key*), `gpt-researcher` (multi-source synthesis), `github-librarian`; finance sources already in your marketplace: `dow-jones-factiva`, `factset`, `lseg`, `morningstar`, `quartr`, `cb-insights`, `aiera`, `daloopa`; save sources with `readwise`.
 - **Fact-checking:** `citecheck` (sources exist + relevant), `scite` (citation strength), confirm figures via `factset`/`factiva`.
-- **SEO:** `codex-seo`, `enterprise-seo`, `semrush`, `similarweb`.
+- **SEO:** `codex-seo`, `enterprise-frontend-seo`, `semrush`, `similarweb`.
 - **Store/sync:** `google-drive`, `github`, `notion`; remember context with `claude-mem`.
 
 **Editing workflow (page refresh):**
@@ -80,9 +80,9 @@ There's no single "API finder" — this is a workflow built from real plugins.
 
 - **Find APIs:** `github-librarian` (SDKs/repos), `microsoft-docs` (MS/Azure), `firecrawl` (scrape docs/pricing), `gpt-researcher` + `openai-developers`/`github` (compare).
 - **Evaluate** (reliability · pricing · docs · auth · rate limits · webhooks · SDKs): pull each provider's docs with `firecrawl`; check SDK health with `github-librarian`; status/uptime with `checkly`.
-- **Specific provider APIs:** `stripe-link` (payments), `twilio-dev-kit`/`sendgrid` (comms), `seam` (IoT/access), `drpc` (web3), `clerk` (auth), `supabase`/`vercel`/`netlify`/`cloudflare` (platform).
+- **Specific provider APIs:** `link` (payments), `twilio-developer-kit`/`sendgrid` (comms), `seam` (IoT/access), `drpc-agent-skills` (web3), `clerk-skills` (auth), `supabase`/`vercel`/`netlify`/`cloudflare` (platform).
 - **Implement in Vite/React/Supabase/Vercel:** keys server-side only (Supabase Edge Function / Vercel function as proxy); typed client + retries; secrets via env, scanned with `secret-guard`, linted with `env-lint`.
-- **Test/monitor/secure:** `checkly` (synthetic), `sentry`/`sentry-cli` (errors), `datadog` (APM), `stackhawk`/`zscaler` (security), `llm-router` (route LLM APIs).
+- **Test/monitor/secure:** `checkly` (synthetic), `sentry`/`sentry-cli` (errors), `datadog` (APM), `stackhawk`/`zscaler-terraform-skills` (security), `llm-router` (route LLM APIs).
 
 *(Full detail: `reports/api-discovery-and-integration-stack.md`. Not yet in marketplace — connect as MCP later: Tavily, Exa, Perplexity, Postman, Bruno.)*
 
@@ -90,20 +90,20 @@ There's no single "API finder" — this is a workflow built from real plugins.
 
 ## 5. Best website / app-building stacks
 
-- **Frontend/UI:** `astro`, `litestar`, `maquette` (image→components), `stark`, `universal-design-principles`, `mermaid`, `figma`.
-- **Backend/DB:** `supabase`, `convex`, `prisma`, `mongodb`, `couchbase`, `valkey`, `kurrent`, `azure-documentdb`, `metabase`, `dataproduct-builder-dbt`.
-- **Auth:** `clerk`, Supabase Auth.
+- **Frontend/UI:** `astro-codex-plugin`, `litestar`, `maquette` (image→components), `stark`, `universal-design-principles`, `mermaid-js-for-agents`, `figma`.
+- **Backend/DB:** `supabase`, `convex`, `prisma`, `mongodb`, `couchbase-skills`, `valkey-skills`, `kurrent`, `documentdb`, `metabase`, `dataproduct-builder-dbt`.
+- **Auth:** `clerk-skills`, Supabase Auth.
 - **Deploy/infra:** `vercel`, `netlify`, `cloudflare`, `truefoundry`.
 - **Testing/QA:** `test-gap`, `flaky-detector`, `env-lint`, `brooks-lint`, `codex-reviewer`, `spec-driven`.
-- **Security:** `secret-guard`, `deps-doctor`, `stackhawk`, `fortify`, `agentic-security`, `armorcodex`, `zscaler`, `burpsuite-bridge`.
+- **Security:** `secret-guard`, `deps-doctor`, `stackhawk`, `fortify-skills`, `agentic-security`, `armorcodex`, `zscaler-terraform-skills`, `burpsuite-mcp-bridge`.
 - **Monitoring/perf:** `checkly`, `sentry`/`sentry-cli`, `datadog`, `langfuse`.
-- **SEO/content:** `codex-seo`, `enterprise-seo`, `semrush`, `content-planner`.
+- **SEO/content:** `codex-seo`, `enterprise-frontend-seo`, `semrush`, `content-planner`.
 
 **Recommended stacks:**
-- **The Cards Guy:** React/Vite + `supabase` (+`convex`/`prisma`) + `clerk` + `vercel`; `codex-seo`+`semrush`+`content-planner`; `writers-loop`+`unslop`; `checkly`+`sentry`; `secret-guard`+`deps-doctor`+`stackhawk`.
-- **HY Credit / DisputeIQ:** `supabase`/`prisma` (cases) + `clerk`; `secret-guard`+`env-lint` (protect PII/keys); `google-drive`/`box` (documents); `writers-loop`+`unslop` (compliance-aware, FCRA-careful drafting); `claude-mem` (case memory); `codex-reviewer`+`test-gap` (QA). **Keep PII out of logs; verify every dispute claim.**
-- **AI scheduling system:** `session-orchestrator`+`agentops`+`claude-mem`+`task-scheduler`; `n8n-codex`/`n8n-mcp-synta`; `google-calendar`+`gmail`+`notion`; `langfuse` (observe runs).
-- **Creative:** `maquette`+`comfy-workflow` (local), then `pika`/`nyldn-img`/`higgsfield` once accounts are set.
+- **The Cards Guy:** React/Vite + `supabase` (+`convex`/`prisma`) + `clerk-skills` + `vercel`; `codex-seo`+`semrush`+`content-planner`; `writers-loop`+`unslop`; `checkly`+`sentry`; `secret-guard`+`deps-doctor`+`stackhawk`.
+- **HY Credit / DisputeIQ:** `supabase`/`prisma` (cases) + `clerk-skills`; `secret-guard`+`env-lint` (protect PII/keys); `google-drive`/`box` (documents); `writers-loop`+`unslop` (compliance-aware, FCRA-careful drafting); `claude-mem` (case memory); `codex-reviewer`+`test-gap` (QA). **Keep PII out of logs; verify every dispute claim.**
+- **AI scheduling system:** `session-orchestrator`+`agentops`+`claude-mem`+`task-scheduler`; `n8n`/`n8n-mcp-synta-codex`; `google-calendar`+`gmail`+`notion`; `langfuse` (observe runs).
+- **Creative:** `maquette`+`comfy-workflow-mcp` (local), then `pika`/`img`/`higgsfield` once accounts are set.
 
 *(Full detail: `reports/website-app-building-stack.md`.)*
 
@@ -111,11 +111,11 @@ There's no single "API finder" — this is a workflow built from real plugins.
 
 ## 6. Creative — image / video / identity
 
-**What you have now (installable):** `nyldn-img` (image gen), `pika` (video/image suite), `higgsfield` (image+video + Soul ID identity), `comfy-workflow` (local ComfyUI), `roboflow`/`fiftyone` (computer vision), `image-studio`, `video-vision`, `aether`, `maquette`, `remotion-external`, `vidseeds`; plus fork `hyperframes` (HTML→MP4) and `heygen` (avatar video).
+**What you have now (installable):** `img` (image gen), `pika` (video/image suite), `higgsfield` (image+video + Soul ID identity), `comfy-workflow-mcp` (local ComfyUI), `roboflow`/`fiftyone-skills` (computer vision), `image-studio-mcp`, `codex-video-vision`, `aether`, `maquette`, `remotion`, `vidseeds`; plus fork `hyperframes` (HTML→MP4) and `heygen` (avatar video).
 
-- **Image generation:** `nyldn-img` (OpenAI gpt-image-2 + Gemini), `comfy-workflow` (local), `image-studio`.
-- **Video generation:** `pika`, `higgsfield`, `remotion-external` (programmatic), fork `hyperframes`.
-- **Identity consistency:** **`higgsfield` Soul ID is the best current path** (trains a face-faithful identity model, reusable across generations). `heygen` is great for avatar/presenter continuity. `comfy-workflow` lets you drive ControlNet/IP-Adapter locally.
+- **Image generation:** `img` (OpenAI gpt-image-2 + Gemini), `comfy-workflow-mcp` (local), `image-studio-mcp`.
+- **Video generation:** `pika`, `higgsfield`, `remotion` (programmatic), fork `hyperframes`.
+- **Identity consistency:** **`higgsfield` Soul ID is the best current path** (trains a face-faithful identity model, reusable across generations). `heygen` is great for avatar/presenter continuity. `comfy-workflow-mcp` lets you drive ControlNet/IP-Adapter locally.
 
 **Honest gaps:**
 - **No perfect Codex-native identity / height / body-continuity plugin exists** (re-confirmed every run).
@@ -133,15 +133,15 @@ Adding these to the marketplace is free and safe; you only authenticate when you
 | Plugin(s) | Service / account | Install now or wait? |
 |---|---|---|
 | `firecrawl` | firecrawl.dev (free tier, no card) | OK now (free tier) |
-| `langfuse`, `clerk`, `sanity`, `mongodb`, `checkly` | respective free tiers | OK now (free tier) |
+| `langfuse`, `clerk-skills`, `sanity`, `mongodb`, `checkly` | respective free tiers | OK now (free tier) |
 | `codex-seo` | DataForSEO + Firecrawl + Google AI (paid) | Wait |
-| `stripe-link`, `dodopayments` | Stripe / Dodo accounts | Wait |
-| `twilio-dev-kit`, `sendgrid` | Twilio account | Wait |
-| `nyldn-img`, `pika`, `higgsfield`, `aether`, `image-studio`, `video-vision`, `roboflow`, `vidseeds` | image/video provider accounts/keys | Wait |
-| `datocms`, `accelerate-wp`, `spotify-ads`, `seam`, `drpc`, `alation`, `truefoundry`, `azure-documentdb` | vendor accounts | Wait |
-| `bitbucket-cli`, `jenkins-cli`, `atlassian-forge` | Atlassian/Jenkins creds | Wait |
+| `link`, `dodopayments` | Stripe / Dodo accounts | Wait |
+| `twilio-developer-kit`, `sendgrid` | Twilio account | Wait |
+| `img`, `pika`, `higgsfield`, `aether`, `image-studio-mcp`, `codex-video-vision`, `roboflow`, `vidseeds` | image/video provider accounts/keys | Wait |
+| `datocms`, `accelerate-ai-toolkit`, `spotify-ads-api`, `seam`, `drpc-agent-skills`, `alation`, `truefoundry`, `documentdb` | vendor accounts | Wait |
+| `bkt`, `jk`, `forge-skills` | Atlassian/Jenkins creds | Wait |
 | `gpt-researcher`, `llm-router` | an LLM API key (you likely have) | When needed |
-| `metabase`, `dataproduct-builder-dbt`, `n8n-codex` | self-hosted instance/warehouse | Wait |
+| `metabase`, `dataproduct-builder-dbt`, `n8n` | self-hosted instance/warehouse | Wait |
 | OpenAI-fork connectors (Gmail, Slack, Notion, Stripe, Supabase, Vercel, Semrush, FactSet, Factiva, Morningstar, …) | each service's OAuth | Per service, when used |
 
 *(Full table: `reports/api-and-account-requirements.md`.)*
@@ -151,17 +151,17 @@ Adding these to the marketplace is free and safe; you only authenticate when you
 ## 8. Do-not-install-yet list
 
 Powerful or situational — wait until you're ready:
-- **`computer-use-windows`** — controls your actual Windows desktop. Powerful; review first.
-- **`burpsuite-bridge`** — security testing; needs local Burp Suite and care.
-- **Account/API-heavy (Tier 8):** `dodopayments`, `spotify-ads`, `alation`, `accelerate-wp`, `vibeprospecting`, `loops`, `crawlbase`, `armorcodex`, `axonflow`, `truefoundry`, `n8n-codex`, etc.
-- **macOS-only (you're on Windows):** `agent-vision`, `codex-obsidian`, `visionos-apps`.
-- **Windows-unverified (test first):** `nyldn-img`, `higgsfield`, `metabase`, `dataproduct-builder-dbt`, `codex-reviewer`, `armorcodex`, `axonflow`, `compound-engineering`, `sentry-cli`, `spotify-ads`, `alation`, `truefoundry`.
+- **`windows-computer-use`** — controls your actual Windows desktop. Powerful; review first.
+- **`burpsuite-mcp-bridge`** — security testing; needs local Burp Suite and care.
+- **Account/API-heavy (Tier 8):** `dodopayments`, `spotify-ads-api`, `alation`, `accelerate-ai-toolkit`, `vpai`, `loops`, `crawlbase`, `armorcodex`, `axonflow`, `truefoundry`, `n8n`, etc.
+- **macOS-only (you're on Windows):** `agent-vision`, `codex-obsidian`, `build-visionos-apps`.
+- **Windows-unverified (test first):** `img`, `higgsfield`, `metabase`, `dataproduct-builder-dbt`, `codex-reviewer`, `armorcodex`, `axonflow`, `compound-engineering`, `sentry-cli`, `spotify-ads-api`, `alation`, `truefoundry`.
 
 ---
 
 ## 9. Full plugin dashboard
 
-The complete, sortable list of all 257 plugins (category, source wave, install priority, account need, platform, risk) lives in:
+The complete, sortable list of all 254 plugins (category, source wave, install priority, account need, platform, risk) lives in:
 - **`reports/plugin-dashboard.md`** — readable table.
 - **`reports/plugin-dashboard.csv`** — open in Excel/Sheets to filter & sort.
 

@@ -109,7 +109,7 @@ Run each test in Codex **after** installing the plugin (Plugins → `yikusiel-co
 - **Failure signs:** prints values; no diff.
 - **If it fails:** ensure both `.env` and `.env.example` exist.
 
-### 15. `mermaid` — diagrams
+### 15. `mermaid-js-for-agents` — diagrams
 - **Test:** "Create a Mermaid architecture diagram: React/Vite frontend + Supabase backend + Vercel hosting + Clerk auth."
 - **Expected:** Valid Mermaid code you can render.
 - [ ] Pass

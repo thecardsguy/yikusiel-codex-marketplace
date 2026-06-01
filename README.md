@@ -14,16 +14,18 @@ Existing OpenAI plugins are vendored under `plugins/` as `local` sources; extern
 
 1. **Read the guide:** [`reports/codex-marketplace-user-guide.md`](reports/codex-marketplace-user-guide.md) (a `.docx` copy is alongside it).
 2. **Open the tracker:** [`reports/codex-install-tracker.md`](reports/codex-install-tracker.md) — install order + a test prompt for each plugin.
-3. **Install the first 15 only** (zero-config, no account): `writers-loop`, `unslop`, `claude-mem`, `pm-skills`, `agentops`, `session-orchestrator`, `microsoft-docs`, `citecheck`, `github-librarian`, `codebase-recon`, `brooks-lint`, `commit-narrator`, `secret-guard`, `env-lint`, `mermaid`.
+3. **Install the first 15 only** (zero-config, no account): `writers-loop`, `unslop`, `claude-mem`, `pm-skills`, `agentops`, `session-orchestrator`, `microsoft-docs`, `citecheck`, `github-librarian`, `codebase-recon`, `brooks-lint`, `commit-narrator`, `secret-guard`, `env-lint`, `mermaid-js-for-agents`.
 4. **Do not bulk-install** API/account-heavy tools — add those one at a time, only when you'll use them.
 5. **Follow the 5-day plan:** [`reports/first-week-codex-plugin-plan.md`](reports/first-week-codex-plugin-plan.md).
+
+> **Already installed the first 14?** The 15th was renamed — refresh Codex (Plugins → `yikusiel-codex-marketplace` → reopen/refresh) and install **`mermaid-js-for-agents`** (it was listed as `mermaid`, which failed to install because a marketplace entry name must match the plugin's manifest name). The full old→new map is in [`reports/plugin-rename-map.md`](reports/plugin-rename-map.md).
 
 ## How to use this marketplace
 
 **New here? Start with the [Codex Marketplace User Guide](reports/codex-marketplace-user-guide.md)** (`reports/codex-marketplace-user-guide.md`) — plain-English: what to install first, the writing / API / app-building stacks, and which plugins need accounts. A `.docx` copy is in `reports/` too.
 
 ### Recommended first install (zero-config, no account, broadly useful)
-`writers-loop`, `unslop`, `claude-mem`, `pm-skills`, `agentops`, `session-orchestrator`, `microsoft-docs`, `citecheck`, `github-librarian`, `codebase-recon`, `brooks-lint`, `commit-narrator`, `secret-guard`, `env-lint`, `mermaid`.
+`writers-loop`, `unslop`, `claude-mem`, `pm-skills`, `agentops`, `session-orchestrator`, `microsoft-docs`, `citecheck`, `github-librarian`, `codebase-recon`, `brooks-lint`, `commit-narrator`, `secret-guard`, `env-lint`, `mermaid-js-for-agents`.
 
 1. **Refresh in Codex:** Plugins → `yikusiel-codex-marketplace` → reopen/refresh → install any plugin with `+`.
 3. **Don't bulk-install** the account/API-heavy plugins (Tier 8 in [`reports/recommended-install-order.md`](reports/recommended-install-order.md)). Add those one at a time, only when you'll use them — many need a paid account or API key.

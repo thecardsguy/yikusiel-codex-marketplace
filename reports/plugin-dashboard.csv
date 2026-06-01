@@ -1,114 +1,111 @@
 Plugin,Category,Source,Helps with,Install priority,Account/API,Platform,Risk
-agent-vision,Design,External P1,UI/UX design & systems,Platform-specific,No,macOS-only,Low
-remotion-external,Design,External P1,UI/UX design & systems,Install later,No,Windows OK,Low
-stark,Design,External P1,UI/UX design & systems,Install later,No,Windows OK,Low
-universal-design-principles,Design,External P1,UI/UX design & systems,Install later,No,Windows OK,Low
-vidseeds,Design,External P1,UI/UX design & systems,Needs account/API,Yes,Windows OK,Low
-chrome-devtools,Tools & Integrations,External P1,Integrations,Install later,No,Windows OK,Low
-kachilu-browser,Tools & Integrations,External P1,Integrations,Install later,No,Windows OK,Low
-agentops,Agent Orchestration,External P2,Multi-agent orchestration,Install first,No,Windows OK,Low
-session-orchestrator,Agent Orchestration,External P2,Multi-agent orchestration,Install first,No,Windows OK,Low
-langfuse,Analytics,External P2,Analytics & LLM observability,Needs account/API,Yes,Windows OK,Medium
-brooks-lint,Code Review,External P2,Code review & PR quality,Install later,No,Windows OK,Low
-pr-storyteller,Code Review,External P2,Code review & PR quality,Install later,No,Windows OK,Low
-codebase-recon,Coding,External P2,Coding assistance & workflows,Install first,No,Windows OK,Low
-maquette,Design,External P2,UI/UX design & systems,Install later,No,Windows OK,Low
-convex,Developer Tools,External P2,General dev tooling,Install later,No,Windows OK,Low
-dodopayments,Finance,External P2,Finance/markets/payments,Needs account/API,Yes,Windows OK,Medium
-claude-mem,Memory & Context,External P2,Persistent memory/context,Install first,No,Windows OK,Low
-standup-gen,Productivity,External P2,Productivity & ops workflows,Install first,No,Windows OK,Low
-todo-harvest,Productivity,External P2,Productivity & ops workflows,Install first,No,Windows OK,Low
-pm-skills,Project Management,External P2,Planning & PM,Install later,No,Windows OK,Low
-secret-guard,Security,External P2,Security/secret/dependency scanning,Install later,No,Windows OK,Low
-env-lint,Testing & QA,External P2,Testing & QA gaps,Install later,No,Windows OK,Low
-test-gap,Testing & QA,External P2,Testing & QA gaps,Install later,No,Windows OK,Low
-shopify-plugin,Tools & Integrations,External P2,Integrations,Needs account/API,Yes,Windows OK,Low
-unslop,Writing,External P2,Humanized/structured writing & editing,Install first,No,Windows OK,Low
-writers-loop,Writing,External P2,Humanized/structured writing & editing,Install first,No,Windows OK,Low
-wshobson-agents,Agent Orchestration,External P3,Multi-agent orchestration,Install first,No,Windows OK,Low
-clerk,Auth,External P3,Authentication & user management,Needs account/API,Yes,Windows OK,Low
-n8n-mcp-synta,Automation,External P3,Workflow automation (n8n etc.),Install later,No,Windows OK,Low
-browser-bridge,Browser Automation,External P3,Browser/computer-use automation,Install later,No,Windows OK,Low
-computer-use-windows,Browser Automation,External P3,Browser/computer-use automation,Install later,No,Windows OK,Medium
-sanity,CMS,External P3,Headless/WordPress content management,Needs account/API,Yes,Windows OK,Low
-codex-reviewer,Code Review,External P3,Code review & PR quality,Install later,No,Windows-unverified,Low
-changelog-forge,Coding,External P3,Coding assistance & workflows,Install first,No,Windows OK,Low
-commit-narrator,Coding,External P3,Coding assistance & workflows,Install first,No,Windows OK,Low
-compound-engineering,Coding,External P3,Coding assistance & workflows,Needs account/API,Yes,Windows-unverified,Low
-spec-driven,Coding,External P3,Coding assistance & workflows,Install first,No,Windows OK,Low
-visionos-apps,Coding,External P3,Coding assistance & workflows,Platform-specific,No,macOS-only,Low
-fiftyone,Computer Vision,External P3,CV datasets/models,Install later,No,Windows OK,Low
-roboflow,Computer Vision,External P3,CV datasets/models,Needs account/API,Yes,Windows OK,Low
-content-planner,Content,External P3,Content planning & drafting,Needs account/API,Yes,Windows OK,Low
-aether,Creative,External P3,See plugin docs,Needs account/API,Yes,Windows OK,Low
-dataproduct-builder-dbt,Data,External P3,See plugin docs,Needs account/API,Yes,Windows-unverified,Low
-metabase,Data & BI,External P3,See plugin docs,Needs account/API,Yes,Windows-unverified,Low
-mongodb,Database,External P3,Database schema/queries/ops,Needs account/API,Yes,Windows OK,Low
-prisma,Database,External P3,Database schema/queries/ops,Install later,No,Windows OK,Low
-jenkins-cli,Deployment & CI,External P3,"Deploy, CI/CD pipelines",Needs account/API,Yes,Windows OK,Low
-atlassian-forge,Developer Tools,External P3,General dev tooling,Needs account/API,Yes,Windows OK,Low
-bitbucket-cli,Developer Tools,External P3,General dev tooling,Needs account/API,Yes,Windows OK,Low
-mermaid,Diagrams,External P3,Diagrams (Mermaid),Install first,No,Windows OK,Low
-loops,Email,External P3,Email sending/inbox,Needs account/API,Yes,Windows OK,Low
-superhuman-mail,Email,External P3,Email sending/inbox,Install later,No,Windows OK,Low
-comfy-workflow,Image & Video,External P3,Image+video generation,Install later,No,Windows OK,Low
-higgsfield,Image & Video,External P3,Image+video generation,Needs account/API,Yes,Windows-unverified,Low
-pika,Image & Video,External P3,Image+video generation,Needs account/API,Yes,Windows OK,Low
-image-studio,Image Generation,External P3,Image generation,Needs account/API,Yes,Windows OK,Low
-nyldn-img,Image Generation,External P3,Image generation,Needs account/API,Yes,Windows-unverified,Low
-adsense-readiness,Marketing,External P3,Marketing & ads workflows,Install later,No,Windows OK,Low
-digital-marketing,Marketing,External P3,Marketing & ads workflows,Install later,No,Windows OK,Low
-linkedin-skills,Marketing,External P3,Marketing & ads workflows,Install later,No,Windows OK,Low
-context-pack,Memory & Context,External P3,Persistent memory/context,Install first,No,Windows OK,Low
-checkly,Monitoring,External P3,Uptime/error monitoring,Needs account/API,Yes,Windows OK,Low
-sentry-cli,Observability,External P3,Tracing & error observability,Needs account/API,Yes,Windows-unverified,Low
-codex-obsidian,Productivity,External P3,Productivity & ops workflows,Platform-specific,No,macOS-only,Low
-task-scheduler,Productivity,External P3,Productivity & ops workflows,Install first,No,Windows OK,Low
-gh-project-plugin,Project Management,External P3,Planning & PM,Install later,No,Windows OK,Low
-project-autopilot,Project Management,External P3,Planning & PM,Install later,No,Windows OK,Low
-arxiv,Research,External P3,Web/literature research,Install first,No,Windows OK,Low
-codex-autoresearch,Research,External P3,Web/literature research,Install first,No,Windows OK,Low
-gpt-researcher,Research,External P3,Web/literature research,Needs account/API,Yes,Windows OK,Medium
-gsearch,Research,External P3,Web/literature research,Install first,No,Windows OK,Low
-papersflow,Research,External P3,Web/literature research,Needs account/API,Yes,Windows OK,Low
-codex-seo,SEO,External P3,SEO audits & content optimization,Needs account/API,Yes,Windows OK,Low
-enterprise-seo,SEO,External P3,SEO audits & content optimization,Install later,No,Windows OK,Low
-vibeprospecting,Sales & CRM,External P3,Sales prospecting/CRM,Needs account/API,Yes,Windows OK,Low
-crawlbase,Scraping,External P3,Web scraping/data extraction,Needs account/API,Yes,Windows OK,Medium
-agentic-security,Security,External P3,Security/secret/dependency scanning,Install later,No,Windows OK,Medium
-armorcodex,Security,External P3,Security/secret/dependency scanning,Needs account/API,Yes,Windows-unverified,Low
-axonflow,Security,External P3,Security/secret/dependency scanning,Needs account/API,Yes,Windows-unverified,Low
-deps-doctor,Security,External P3,Security/secret/dependency scanning,Install later,No,Windows OK,Low
-fortify,Security,External P3,Security/secret/dependency scanning,Needs account/API,Yes,Windows OK,Low
-stackhawk,Security,External P3,Security/secret/dependency scanning,Needs account/API,Yes,Windows OK,Low
-spreadsheet-peek,Spreadsheets,External P3,Spreadsheet/reporting,Install later,No,Windows OK,Low
-flaky-detector,Testing & QA,External P3,Testing & QA gaps,Install later,No,Windows OK,Low
-video-vision,Video Review,External P3,Video review/analysis,Needs account/API,Yes,Windows OK,Low
-base44,Web Apps,External P3,Full-stack app building,Needs account/API,Yes,Windows OK,Low
-drpc,APIs & Communications,External P4 (this run),API/comms (SMS/voice/IoT),Needs account/API,Yes,Windows OK,Medium
-seam,APIs & Communications,External P4 (this run),API/comms (SMS/voice/IoT),Needs account/API,Yes,Windows OK,Medium
-twilio-dev-kit,APIs & Communications,External P4 (this run),API/comms (SMS/voice/IoT),Needs account/API,Yes,Windows OK,Medium
-llm-router,Agent Orchestration,External P4 (this run),Multi-agent orchestration,Install first,No,Windows OK,Medium
-n8n-codex,Automation,External P4 (this run),Workflow automation (n8n etc.),Needs account/API,Yes,Windows OK,Medium
-accelerate-wp,CMS,External P4 (this run),Headless/WordPress content management,Needs account/API,Yes,Windows OK,Medium
-datocms,CMS,External P4 (this run),Headless/WordPress content management,Needs account/API,Yes,Windows OK,Medium
-alation,Data & Analytics,External P4 (this run),Data catalog/analytics,Needs account/API,Yes,Windows-unverified,Medium
-azure-documentdb,Database,External P4 (this run),Database schema/queries/ops,Needs account/API,Yes,Windows OK,Medium
-couchbase,Database,External P4 (this run),Database schema/queries/ops,Install later,No,Windows OK,Low
-kurrent,Database,External P4 (this run),Database schema/queries/ops,Install later,No,Windows OK,Low
-valkey,Database,External P4 (this run),Database schema/queries/ops,Install later,No,Windows OK,Low
-truefoundry,Deployment & CI,External P4 (this run),"Deploy, CI/CD pipelines",Needs account/API,Yes,Windows-unverified,Medium
-microsoft-docs,Documentation,External P4 (this run),Authoritative docs search,Install first,No,Windows OK,Low
-stripe-link,Finance,External P4 (this run),Finance/markets/payments,Needs account/API,Yes,Windows OK,Medium
-tradingview,Finance,External P4 (this run),Finance/markets/payments,Install later,No,Windows OK,Low
-spotify-ads,Marketing,External P4 (this run),Marketing & ads workflows,Needs account/API,Yes,Windows-unverified,Medium
-github-librarian,Research,External P4 (this run),Web/literature research,Install first,No,Windows OK,Low
-citecheck,Research & Fact-Checking,External P4 (this run),Research + citation verification,Install first,No,Windows OK,Low
-firecrawl,Scraping & Research,External P4 (this run),Web scraping/crawling for research,Needs account/API,Yes,Windows OK,Medium
-burpsuite-bridge,Security,External P4 (this run),Security/secret/dependency scanning,Needs account/API,Yes,Windows OK,Medium
-zscaler,Security,External P4 (this run),Security/secret/dependency scanning,Install later,No,Windows OK,Low
-astro,Web Frameworks,External P4 (this run),Frontend/web framework dev,Install later,No,Windows OK,Low
-litestar,Web Frameworks,External P4 (this run),Frontend/web framework dev,Install later,No,Windows OK,Low
+drpc-agent-skills,APIs & Communications,External,API/comms (SMS/voice/IoT),Needs account/API,Yes,Windows OK,Medium
+seam,APIs & Communications,External,API/comms (SMS/voice/IoT),Needs account/API,Yes,Windows OK,Medium
+agentops,Agent Orchestration,External,Multi-agent orchestration,Install first,No,Windows OK,Low
+developer-essentials,Agent Orchestration,External,Multi-agent orchestration,Install first,No,Windows OK,Low
+llm-router,Agent Orchestration,External,Multi-agent orchestration,Install first,No,Windows OK,Medium
+session-orchestrator,Agent Orchestration,External,Multi-agent orchestration,Install first,No,Windows OK,Low
+langfuse,Analytics,External,Analytics & LLM observability,Needs account/API,Yes,Windows OK,Medium
+clerk-skills,Auth,External,Authentication & user management,Needs account/API,Yes,Windows OK,Low
+n8n,Automation,External,Workflow automation (n8n etc.),Needs account/API,Yes,Windows OK,Medium
+n8n-mcp-synta-codex,Automation,External,Workflow automation (n8n etc.),Install later,No,Windows OK,Low
+browserbridge,Browser Automation,External,Browser/computer-use automation,Install later,No,Windows OK,Low
+windows-computer-use,Browser Automation,External,Browser/computer-use automation,Install later,No,Windows OK,Medium
+accelerate-ai-toolkit,CMS,External,Headless/WordPress content management,Needs account/API,Yes,Windows OK,Medium
+datocms,CMS,External,Headless/WordPress content management,Needs account/API,Yes,Windows OK,Medium
+sanity,CMS,External,Headless/WordPress content management,Needs account/API,Yes,Windows OK,Low
+brooks-lint,Code Review,External,Code review & PR quality,Install later,No,Windows OK,Low
+codex-reviewer,Code Review,External,Code review & PR quality,Install later,No,Windows-unverified,Low
+pr-storyteller,Code Review,External,Code review & PR quality,Install later,No,Windows OK,Low
+build-visionos-apps,Coding,External,Coding assistance & workflows,Platform-specific,No,macOS-only,Low
+changelog-forge,Coding,External,Coding assistance & workflows,Install first,No,Windows OK,Low
+codebase-recon,Coding,External,Coding assistance & workflows,Install first,No,Windows OK,Low
+commit-narrator,Coding,External,Coding assistance & workflows,Install first,No,Windows OK,Low
+compound-engineering,Coding,External,Coding assistance & workflows,Needs account/API,Yes,Windows-unverified,Low
+spec-driven,Coding,External,Coding assistance & workflows,Install first,No,Windows OK,Low
+fiftyone-skills,Computer Vision,External,CV datasets/models,Install later,No,Windows OK,Low
+roboflow,Computer Vision,External,CV datasets/models,Needs account/API,Yes,Windows OK,Low
+content-planner,Content,External,Content planning & drafting,Needs account/API,Yes,Windows OK,Low
+aether,Creative,External,See plugin docs,Needs account/API,Yes,Windows OK,Low
+dataproduct-builder-dbt,Data,External,See plugin docs,Needs account/API,Yes,Windows-unverified,Low
+alation,Data & Analytics,External,Data catalog/analytics,Needs account/API,Yes,Windows-unverified,Medium
+metabase,Data & BI,External,See plugin docs,Needs account/API,Yes,Windows-unverified,Low
+couchbase-skills,Database,External,Database schema/queries/ops,Install later,No,Windows OK,Low
+documentdb,Database,External,Database schema/queries/ops,Needs account/API,Yes,Windows OK,Medium
+kurrent,Database,External,Database schema/queries/ops,Install later,No,Windows OK,Low
+mongodb,Database,External,Database schema/queries/ops,Needs account/API,Yes,Windows OK,Low
+prisma,Database,External,Database schema/queries/ops,Install later,No,Windows OK,Low
+valkey-skills,Database,External,Database schema/queries/ops,Install later,No,Windows OK,Low
+jk,Deployment & CI,External,"Deploy, CI/CD pipelines",Needs account/API,Yes,Windows OK,Low
+truefoundry,Deployment & CI,External,"Deploy, CI/CD pipelines",Needs account/API,Yes,Windows-unverified,Medium
+agent-vision,Design,External,UI/UX design & systems,Platform-specific,No,macOS-only,Low
+maquette,Design,External,UI/UX design & systems,Install later,No,Windows OK,Low
+stark,Design,External,UI/UX design & systems,Install later,No,Windows OK,Low
+universal-design-principles,Design,External,UI/UX design & systems,Install later,No,Windows OK,Low
+vidseeds,Design,External,UI/UX design & systems,Needs account/API,Yes,Windows OK,Low
+bkt,Developer Tools,External,General dev tooling,Needs account/API,Yes,Windows OK,Low
+convex,Developer Tools,External,General dev tooling,Install later,No,Windows OK,Low
+forge-skills,Developer Tools,External,General dev tooling,Needs account/API,Yes,Windows OK,Low
+mermaid-js-for-agents,Diagrams,External,Diagrams (Mermaid),Install first,No,Windows OK,Low
+microsoft-docs,Documentation,External,Authoritative docs search,Install first,No,Windows OK,Low
+loops,Email,External,Email sending/inbox,Needs account/API,Yes,Windows OK,Low
+superhuman-mail,Email,External,Email sending/inbox,Install later,No,Windows OK,Low
+dodopayments,Finance,External,Finance/markets/payments,Needs account/API,Yes,Windows OK,Medium
+link,Finance,External,Finance/markets/payments,Needs account/API,Yes,Windows OK,Medium
+tradingview-mcp,Finance,External,Finance/markets/payments,Install later,No,Windows OK,Low
+comfy-workflow-mcp,Image & Video,External,Image+video generation,Install later,No,Windows OK,Low
+higgsfield,Image & Video,External,Image+video generation,Needs account/API,Yes,Windows-unverified,Low
+pika,Image & Video,External,Image+video generation,Needs account/API,Yes,Windows OK,Low
+image-studio-mcp,Image Generation,External,Image generation,Needs account/API,Yes,Windows OK,Low
+img,Image Generation,External,Image generation,Needs account/API,Yes,Windows-unverified,Low
+arb,Marketing,External,Marketing & ads workflows,Install later,No,Windows OK,Low
+digital-marketing-pro,Marketing,External,Marketing & ads workflows,Install later,No,Windows OK,Low
+linkedin-skills,Marketing,External,Marketing & ads workflows,Install later,No,Windows OK,Low
+spotify-ads-api,Marketing,External,Marketing & ads workflows,Needs account/API,Yes,Windows-unverified,Medium
+claude-mem,Memory & Context,External,Persistent memory/context,Install first,No,Windows OK,Low
+context-pack,Memory & Context,External,Persistent memory/context,Install first,No,Windows OK,Low
+checkly,Monitoring,External,Uptime/error monitoring,Needs account/API,Yes,Windows OK,Low
+sentry-cli,Observability,External,Tracing & error observability,Needs account/API,Yes,Windows-unverified,Low
+codex-obsidian,Productivity,External,Productivity & ops workflows,Platform-specific,No,macOS-only,Low
+standup-gen,Productivity,External,Productivity & ops workflows,Install first,No,Windows OK,Low
+task-scheduler,Productivity,External,Productivity & ops workflows,Install first,No,Windows OK,Low
+todo-harvest,Productivity,External,Productivity & ops workflows,Install first,No,Windows OK,Low
+codex-project-autopilot,Project Management,External,Planning & PM,Install later,No,Windows OK,Low
+gh-project-plugin,Project Management,External,Planning & PM,Install later,No,Windows OK,Low
+pm-skills,Project Management,External,Planning & PM,Install later,No,Windows OK,Low
+codex-autoresearch,Research,External,Web/literature research,Install first,No,Windows OK,Low
+github-librarian,Research,External,Web/literature research,Install first,No,Windows OK,Low
+gpt-researcher,Research,External,Web/literature research,Needs account/API,Yes,Windows OK,Medium
+gsearch,Research,External,Web/literature research,Install first,No,Windows OK,Low
+papersflow-codex-plugin,Research,External,Web/literature research,Needs account/API,Yes,Windows OK,Low
+citecheck,Research & Fact-Checking,External,Research + citation verification,Install first,No,Windows OK,Low
+codex-seo,SEO,External,SEO audits & content optimization,Needs account/API,Yes,Windows OK,Low
+enterprise-frontend-seo,SEO,External,SEO audits & content optimization,Install later,No,Windows OK,Low
+vpai,Sales & CRM,External,Sales prospecting/CRM,Needs account/API,Yes,Windows OK,Low
+crawlbase,Scraping,External,Web scraping/data extraction,Needs account/API,Yes,Windows OK,Medium
+firecrawl,Scraping & Research,External,Web scraping/crawling for research,Needs account/API,Yes,Windows OK,Medium
+agentic-security,Security,External,Security/secret/dependency scanning,Install later,No,Windows OK,Medium
+armorcodex,Security,External,Security/secret/dependency scanning,Needs account/API,Yes,Windows-unverified,Low
+axonflow,Security,External,Security/secret/dependency scanning,Needs account/API,Yes,Windows-unverified,Low
+burpsuite-mcp-bridge,Security,External,Security/secret/dependency scanning,Needs account/API,Yes,Windows OK,Medium
+deps-doctor,Security,External,Security/secret/dependency scanning,Install later,No,Windows OK,Low
+fortify-skills,Security,External,Security/secret/dependency scanning,Needs account/API,Yes,Windows OK,Low
+secret-guard,Security,External,Security/secret/dependency scanning,Install later,No,Windows OK,Low
+stackhawk,Security,External,Security/secret/dependency scanning,Needs account/API,Yes,Windows OK,Low
+zscaler-terraform-skills,Security,External,Security/secret/dependency scanning,Install later,No,Windows OK,Low
+spreadsheet-peek,Spreadsheets,External,Spreadsheet/reporting,Install later,No,Windows OK,Low
+env-lint,Testing & QA,External,Testing & QA gaps,Install later,No,Windows OK,Low
+flaky-detector,Testing & QA,External,Testing & QA gaps,Install later,No,Windows OK,Low
+test-gap,Testing & QA,External,Testing & QA gaps,Install later,No,Windows OK,Low
+chrome-devtools,Tools & Integrations,External,Integrations,Install later,No,Windows OK,Low
+kachilu-browser,Tools & Integrations,External,Integrations,Install later,No,Windows OK,Low
+shopify-plugin,Tools & Integrations,External,Integrations,Needs account/API,Yes,Windows OK,Low
+codex-video-vision,Video Review,External,Video review/analysis,Needs account/API,Yes,Windows OK,Low
+base44,Web Apps,External,Full-stack app building,Needs account/API,Yes,Windows OK,Low
+astro-codex-plugin,Web Frameworks,External,Frontend/web framework dev,Install later,No,Windows OK,Low
+litestar,Web Frameworks,External,Frontend/web framework dev,Install later,No,Windows OK,Low
+unslop,Writing,External,Humanized/structured writing & editing,Install first,No,Windows OK,Low
+writers-loop,Writing,External,Humanized/structured writing & editing,Install first,No,Windows OK,Low
 box,(none),OpenAI fork,See plugin docs,Install later,Usually (OAuth),Windows OK,Low
 google-drive,(none),OpenAI fork,See plugin docs,Install later,Usually (OAuth),Windows OK,Low
 build-ios-apps,Coding,OpenAI fork,Coding assistance & workflows,Install first,Usually (OAuth),Windows OK,Low

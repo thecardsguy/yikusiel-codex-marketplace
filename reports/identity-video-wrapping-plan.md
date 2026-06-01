@@ -5,15 +5,15 @@ A practical plan for getting **same-person identity, face consistency, and body/
 ## What currently exists in the marketplace
 - **`higgsfield`** — image + video generation across 30+ models, plus **Soul ID**: train a face-faithful identity model from photos and reuse its `reference_id` across generations. *Best current path to same-person consistency.* (Paid Higgsfield account.)
 - **`heygen`** *(fork)* — avatar video; a persistent avatar identity for presenter/talking-head clips and 175-language dubbing. (HeyGen account.)
-- **`comfy-workflow`** — manage/validate local **ComfyUI** workflows. With a local ComfyUI install you can run ControlNet, IP-Adapter, InstantID, PuLID, LoRA, pose/reference conditioning yourself. (Local ComfyUI; no cloud account.)
-- **`pika` / `nyldn-img` / `image-studio` / `aether`** — generation/editing, but **no built-in identity lock**.
+- **`comfy-workflow-mcp`** — manage/validate local **ComfyUI** workflows. With a local ComfyUI install you can run ControlNet, IP-Adapter, InstantID, PuLID, LoRA, pose/reference conditioning yourself. (Local ComfyUI; no cloud account.)
+- **`pika` / `img` / `image-studio-mcp` / `aether`** — generation/editing, but **no built-in identity lock**.
 
 ## What each can do for identity/continuity
 | Tool | Face identity | Body/height continuity | Scene continuity | How |
 |---|---|---|---|---|
 | `higgsfield` Soul ID | ✅ strong | ⚠️ partial | ⚠️ partial | trained identity model reused across shots |
 | `heygen` | ✅ (avatar) | ❌ | ❌ | fixed avatar presenter |
-| `comfy-workflow` (local) | ✅ (InstantID/IP-Adapter) | ⚠️ via pose/ControlNet | ✅ via reference/ControlNet | you build the graph |
+| `comfy-workflow-mcp` (local) | ✅ (InstantID/IP-Adapter) | ⚠️ via pose/ControlNet | ✅ via reference/ControlNet | you build the graph |
 | `awesome-genmedia/skills` (needs wrap) | ✅ (InstantID/PhotoMaker) | ⚠️ | ✅ (StoryDiffusion) | eachlabs.ai API |
 
 ## What `awesome-genmedia/skills` can do (wrap candidate)
@@ -48,7 +48,7 @@ A Claude-format plugin wrapping eachlabs.ai: **InstantID, InstantID+IP-Adapter, 
 
 ## Recommended first implementation path
 1. **Now (no build):** use `higgsfield` Soul ID for same-person image/video; `heygen` for avatars. Validate it meets your bar before investing in custom work.
-2. **If you need finer control:** stand up a local **ComfyUI** + use `comfy-workflow` to drive InstantID/IP-Adapter/ControlNet.
+2. **If you need finer control:** stand up a local **ComfyUI** + use `comfy-workflow-mcp` to drive InstantID/IP-Adapter/ControlNet.
 3. **If you want it as an installable plugin:** **wrap `awesome-genmedia/skills`** (small, safe, ~1 plugin) — *first custom step, on your approval*.
 4. **Only if 1–3 are insufficient:** commission the custom **`identity-lock`** then **`height-scale-lock`** skills, with the guardrails above.
 

@@ -2,7 +2,7 @@
 
 A practical 5-day plan to install and test the safe first batch (all zero-config, no account, low risk). In Codex: **Plugins → `yikusiel-codex-marketplace` → reopen/refresh → `+`**. Track results in `reports/codex-install-tracker.md`.
 
-> **Do not install yet:** any account/API-heavy plugin, `computer-use-windows`, `burpsuite-bridge`, or macOS-only tools (`agent-vision`, `codex-obsidian`, `visionos-apps`). One day at a time — don't bulk-install.
+> **Do not install yet:** any account/API-heavy plugin, `windows-computer-use`, `burpsuite-mcp-bridge`, or macOS-only tools (`agent-vision`, `codex-obsidian`, `build-visionos-apps`). One day at a time — don't bulk-install.
 
 ## Day 1 — Writing & memory
 **Install:** `writers-loop`, `unslop`, `claude-mem`
@@ -40,7 +40,7 @@ A practical 5-day plan to install and test the safe first batch (all zero-config
 **Looks right if:** you get a clear staged plan and a clean commit message.
 
 ## Day 5 — Visual / documentation helper
-**Install:** `mermaid`
+**Install:** `mermaid-js-for-agents`
 **Test:** "Create a Mermaid architecture diagram for The Cards Guy: React/Vite frontend + Supabase backend + Vercel hosting + Clerk auth."
 **Looks right if:** you get valid Mermaid code you can paste into a renderer.
 

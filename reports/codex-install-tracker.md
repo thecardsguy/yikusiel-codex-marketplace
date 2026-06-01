@@ -1,6 +1,6 @@
 # Codex Install Tracker — first safe batch (15 plugins)
 
-**Update:** 14 installed successfully; `mermaid` failed during install due to an entry/manifest name mismatch — **fixed** (entry renamed to `mermaid-js-for-agents`). Test prompts in `post-install-test-checklist.md` / `codex-copy-paste-test-prompts.md`. Full record: `codex-install-tracker.csv`.
+**Update:** 14 installed successfully; `mermaid-js-for-agents` failed during install due to an entry/manifest name mismatch — **fixed** (entry renamed to `mermaid-js-for-agents`). Test prompts in `post-install-test-checklist.md` / `codex-copy-paste-test-prompts.md`. Full record: `codex-install-tracker.csv`.
 
 | # | Plugin | Category | Account/API | Risk | Installed? | Tested? | Result | Issue found | Next action |
 |---|---|---|---|---|---|---|---|---|---|

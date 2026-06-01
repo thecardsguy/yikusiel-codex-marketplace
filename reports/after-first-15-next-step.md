@@ -18,19 +18,19 @@ Pick the branch that matches your test results from `reports/plugin-test-results
 
 ## ✅ If CODE tools passed (`codebase-recon`, `brooks-lint`, `commit-narrator`, `secret-guard`, `env-lint`)
 **→ Move to the app-building stack** (for The Cards Guy site + DisputeIQ).
-- Order: `clerk` (auth, free tier) + `supabase` (or `prisma`/`convex`) → `vercel` (hosting, free tier) → `sentry` + `checkly` (monitoring, free tiers) → `stackhawk` (security).
+- Order: `clerk-skills` (auth, free tier) + `supabase` (or `prisma`/`convex`) → `vercel` (hosting, free tier) → `sentry` + `checkly` (monitoring, free tiers) → `stackhawk` (security).
 - Why: ship and run real apps with auth, data, deploy, monitoring, security.
 - Risk: low→medium. Most have free tiers.
 
 ## ⏳ If CREATIVE is your next priority
 **→ Move slowly — most setup, paid accounts.**
-- Order: `comfy-workflow` (local ComfyUI, no cloud acct) → `higgsfield` (Soul-ID identity, paid) → `heygen` (avatars, paid) → `pika` (video, paid). Wrap `awesome-genmedia` only later (custom, your approval).
+- Order: `comfy-workflow-mcp` (local ComfyUI, no cloud acct) → `higgsfield` (Soul-ID identity, paid) → `heygen` (avatars, paid) → `pika` (video, paid). Wrap `awesome-genmedia` only later (custom, your approval).
 - Why: real image/video + best face-consistency path.
 - Risk: medium (accounts + a wrapper build for full identity control). See `creative-identity-tools.md` + `identity-video-wrapping-plan.md`.
 
 ## ⚠️ If MANY of the first 15 FAILED
 **→ Do NOT add more plugins. Diagnose first:**
-1. **Marketplace refresh:** Codex → Plugins → `yikusiel-codex-marketplace` → reopen/refresh. The marketplace validates clean (257 plugins, `--online` passed), so failures are usually client-side.
+1. **Marketplace refresh:** Codex → Plugins → `yikusiel-codex-marketplace` → reopen/refresh. The marketplace validates clean (254 plugins, `--online` passed), so failures are usually client-side.
 2. **Plugin source:** external plugins load from GitHub at install — confirm Codex can reach GitHub; try one plugin again.
 3. **Codex install issue:** restart Codex; check its plugin logs; re-add the marketplace if it's not listed.
 4. **Re-run `python scripts/validate-marketplace.py --online`** to confirm manifests are still reachable (it was passing as of commit `5696142`).

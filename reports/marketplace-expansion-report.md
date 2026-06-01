@@ -18,37 +18,37 @@ Validation: JSON valid ✔ · no duplicate names ✔ · all 60 new manifests rea
 ### Added this run, by category
 
 **Creative · image · video · vision (8)**
-`nyldn-img` (OpenAI gpt-image-2 + Gemini image gen — API), `higgsfield` (image+video, 30+ models, **Soul ID identity** — account), `aether` (visual memory/prompt refine — API), `pika` (Pika video/creative suite — OAuth), `comfy-workflow` (ComfyUI workflow mgmt — local ComfyUI), `roboflow` (computer vision pipelines — API), `fiftyone` (CV dataset/eval), `image-studio` (image editing — API), `video-vision` (video review — API).
+`img` (OpenAI gpt-image-2 + Gemini image gen — API), `higgsfield` (image+video, 30+ models, **Soul ID identity** — account), `aether` (visual memory/prompt refine — API), `pika` (Pika video/creative suite — OAuth), `comfy-workflow-mcp` (ComfyUI workflow mgmt — local ComfyUI), `roboflow` (computer vision pipelines — API), `fiftyone-skills` (CV dataset/eval), `image-studio-mcp` (image editing — API), `codex-video-vision` (video review — API).
 
 **SEO · marketing · content (6)**
-`codex-seo` (19-skill SEO audit — DataForSEO/Firecrawl/Google), `enterprise-seo`, `digital-marketing`, `adsense-readiness` (AdSense readiness — useful for credit-card content monetization), `content-planner` (API), `linkedin-skills`.
+`codex-seo` (19-skill SEO audit — DataForSEO/Firecrawl/Google), `enterprise-frontend-seo`, `digital-marketing-pro`, `arb` (AdSense readiness — useful for credit-card content monetization), `content-planner` (API), `linkedin-skills`.
 
 **Database · backend · web · CMS · auth (4)**
-`prisma` (ORM, official), `mongodb` (official — API), `sanity` (CMS, official — API), `clerk` (auth, official — API), `base44` (full-stack apps — API). *(`supabase`, `motherduck` already covered.)*
+`prisma` (ORM, official), `mongodb` (official — API), `sanity` (CMS, official — API), `clerk-skills` (auth, official — API), `base44` (full-stack apps — API). *(`supabase`, `motherduck` already covered.)*
 
 **Data · BI · monitoring · spreadsheets (5)**
 `metabase` (BI — needs instance), `dataproduct-builder-dbt` (dbt — API), `checkly` (monitoring, official — API), `sentry-cli` (errors — account), `spreadsheet-peek` (spreadsheets/reporting).
 
 **Security (4)**
-`stackhawk` (DAST, official — API), `fortify` (official — API), `agentic-security`, `armorcodex` (API).
+`stackhawk` (DAST, official — API), `fortify-skills` (official — API), `agentic-security`, `armorcodex` (API).
 
 **Research (4)**
-`gpt-researcher` (popular research agent — API), `arxiv`, `codex-autoresearch` (546⭐), `papersflow` (API).
+`gpt-researcher` (popular research agent — API), `codex-autoresearch` (546⭐), `papersflow-codex-plugin` (API).
 
 **Sales · CRM · email (3)**
-`vibeprospecting` (Explorium — API), `loops` (email, official — API), `superhuman-mail` (Superhuman). *(`zoominfo`, `egnyte` already covered.)*
+`vpai` (Explorium — API), `loops` (email, official — API), `superhuman-mail` (Superhuman). *(`zoominfo`, `egnyte` already covered.)*
 
 **Automation · browser · scraping (5)**
-`computer-use-windows` (computer use on Windows), `browser-bridge`, `crawlbase` (scraping — API), `gsearch` (Google search), `n8n-mcp-synta` (n8n automation).
+`windows-computer-use` (computer use on Windows), `browserbridge`, `crawlbase` (scraping — API), `gsearch` (Google search), `n8n-mcp-synta-codex` (n8n automation).
 
 **Code · CI · QA · dev (13)**
-`codex-reviewer`, `commit-narrator`, `changelog-forge`, `flaky-detector`, `deps-doctor`, `spec-driven`, `bitbucket-cli` (API), `jenkins-cli` (API), `compound-engineering` (API), `wshobson-agents`, `atlassian-forge` (official — API), `mermaid`, `context-pack`.
+`codex-reviewer`, `commit-narrator`, `changelog-forge`, `flaky-detector`, `deps-doctor`, `spec-driven`, `bkt` (API), `jk` (API), `compound-engineering` (API), `developer-essentials`, `forge-skills` (official — API), `mermaid-js-for-agents`, `context-pack`.
 
 **Productivity · PM (5)**
-`task-scheduler`, `gh-project-plugin`, `project-autopilot`, `axonflow` (governance — API), `codex-obsidian` (**macOS-only**).
+`task-scheduler`, `gh-project-plugin`, `codex-project-autopilot`, `axonflow` (governance — API), `codex-obsidian` (**macOS-only**).
 
 **Platform-specific (1)**
-`visionos-apps` (**macOS-only**, visionOS dev — API).
+`build-visionos-apps` (**macOS-only**, visionOS dev — API).
 
 ### Already-covered (skipped — official versions already in the OpenAI fork)
 **5 skipped:** `heygen`, `supabase`, `motherduck`, `zoominfo`, `egnyte`. The community/duplicate versions were dropped because the marketplace already contains these services. (`mongodb` was *not* a collision and **was** added.)
@@ -64,8 +64,8 @@ Validation: JSON valid ✔ · no duplicate names ✔ · all 60 new manifests rea
 ~30 of the 60 added require an API key, OAuth, or paid account **at install/use time** (not now). See `reports/recommended-install-order.md` (Tier 5) and `reports/candidate-backlog.md` for the exact list. None require credentials to merely appear in the marketplace.
 
 ## Platform
-- **macOS-only (2 added):** `codex-obsidian`, `visionos-apps` — install only on macOS.
-- **Windows-unverified (added):** `nyldn-img`, `higgsfield`, `metabase`, `dataproduct-builder-dbt`, `codex-reviewer`, `armorcodex`, `axonflow`, `compound-engineering`, `sentry-cli` — likely cross-platform, test before relying on them.
+- **macOS-only (2 added):** `codex-obsidian`, `build-visionos-apps` — install only on macOS.
+- **Windows-unverified (added):** `img`, `higgsfield`, `metabase`, `dataproduct-builder-dbt`, `codex-reviewer`, `armorcodex`, `axonflow`, `compound-engineering`, `sentry-cli` — likely cross-platform, test before relying on them.
 - All other added plugins report Windows-compatible.
 
 ## Related reports

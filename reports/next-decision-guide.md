@@ -20,20 +20,20 @@ Once your 15 zero-config plugins are installed and tested (see `post-install-tes
 |---|---|---|
 | `higgsfield` (Soul-ID) | paid Higgsfield account | best face-consistency path |
 | `heygen` (fork) | HeyGen account | avatar/presenter video |
-| `comfy-workflow` | **local ComfyUI** (no cloud acct) | local ControlNet/IP-Adapter |
+| `comfy-workflow-mcp` | **local ComfyUI** (no cloud acct) | local ControlNet/IP-Adapter |
 | `awesome-genmedia` wrapper | eachlabs.ai key + a small wrapper build | InstantID/IP-Adapter/ControlNet — **needs wrapping + your approval** |
-**Risk:** Medium (paid accounts; wrapper is a custom build). **Recommended order:** `comfy-workflow` (local, free) → `higgsfield`/`heygen` (accounts) → wrap `awesome-genmedia` last. (See Track B + `identity-video-wrapping-plan.md`.) **Best first if** creative/identity work is your priority — but more setup.
+**Risk:** Medium (paid accounts; wrapper is a custom build). **Recommended order:** `comfy-workflow-mcp` (local, free) → `higgsfield`/`heygen` (accounts) → wrap `awesome-genmedia` last. (See Track B + `identity-video-wrapping-plan.md`.) **Best first if** creative/identity work is your priority — but more setup.
 
 ## Option C — App-building stack
 **What it unlocks:** build/ship The Cards Guy and DisputeIQ — database, auth, deploy, monitoring, security.
 | Tool | Account/API | Notes |
 |---|---|---|
 | `supabase`, `convex`, `prisma` | accounts (free tiers exist) | data layer |
-| `clerk` | account (**free tier**) | auth |
+| `clerk-skills` | account (**free tier**) | auth |
 | `vercel` | account (**free tier**) | hosting |
 | `checkly`, `sentry` | accounts (**free tiers**) | monitoring/errors |
 | `stackhawk` | account | security scanning |
-**Risk:** Low–Medium. **Recommended order:** `clerk` + `supabase` (or `prisma`/`convex`) → `vercel` → `sentry` + `checkly` → `stackhawk`. **Best first if** you're actively building the site/app.
+**Risk:** Low–Medium. **Recommended order:** `clerk-skills` + `supabase` (or `prisma`/`convex`) → `vercel` → `sentry` + `checkly` → `stackhawk`. **Best first if** you're actively building the site/app.
 
 ## Option D — SEO / content stack
 **What it unlocks:** keyword research, competitor analysis, SEO audits, and sourced content — directly grows Cards Guy traffic.

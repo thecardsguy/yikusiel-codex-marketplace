@@ -11,12 +11,12 @@ A focused workflow for writing **expert, humanized, factually-careful U.S. credi
 ## Best plugins for financial / credit-card research
 - **Primary, high-trust:** `dow-jones-factiva`, `factset`, `lseg`, `morningstar`, `quartr`, `cb-insights`, `aiera`, `daloopa` (issuer/market data, earnings, filings).
 - **Web research:** `gpt-researcher` (multi-source synthesis), `firecrawl` (scrape issuer pages / competitor pages), `github-librarian` (find data/tools).
-- **Markets:** `tradingview`.
+- **Markets:** `tradingview-mcp`.
 - **Save/recall sources:** `readwise`.
 > For card terms, APRs, bonuses, and benefits: pull from **issuer pages** (via `firecrawl`) and confirm against Factiva/FactSet. Do not state a number you can't source.
 
 ## Best plugins for SEO and page improvement
-- **`codex-seo`** (19-skill audit), **`enterprise-seo`**, **`semrush`**, **`similarweb`** (keywords, competitors, gaps), **`digital-marketing`**, **`adsense-readiness`** (monetization readiness).
+- **`codex-seo`** (19-skill audit), **`enterprise-frontend-seo`**, **`semrush`**, **`similarweb`** (keywords, competitors, gaps), **`digital-marketing-pro`**, **`arb`** (monetization readiness).
 
 ## Best plugins for fact-checking and avoiding mistakes
 - **`citecheck`** — verify citations/sources exist and are relevant.

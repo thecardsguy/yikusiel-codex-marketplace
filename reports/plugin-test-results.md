@@ -1,6 +1,6 @@
 # Plugin Test Results — first 15
 
-Status as of the install run: **14 installed OK**, `mermaid` failed (now fixed — renamed to `mermaid-js-for-agents`). Test runs still **Pending** — no test results were provided. Machine-readable: `plugin-test-results.csv`.
+Status as of the install run: **14 installed OK**, `mermaid-js-for-agents` failed (now fixed — renamed to `mermaid-js-for-agents`). Test runs still **Pending** — no test results were provided. Machine-readable: `plugin-test-results.csv`.
 
 | Plugin | Installed? | Test run? | Passed? | What worked | What failed | Fix needed | Priority | Keep? |
 |---|---|---|---|---|---|---|---|---|
