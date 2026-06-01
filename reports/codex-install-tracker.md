@@ -1,6 +1,6 @@
 # Codex Install Tracker — first safe batch (15 plugins)
 
-14 installed; the corrected 15th is **`mermaid-js-for-agents`** (Pending — refresh Codex and install). Test prompts in `post-install-test-checklist.md` / `codex-copy-paste-test-prompts.md`. Full record: `codex-install-tracker.csv`.
+**All 15 installed ✅** (the corrected 15th, `mermaid-js-for-agents`, installed successfully). Test runs pending — run each test prompt from `post-install-test-checklist.md` / `codex-copy-paste-test-prompts.md` and record results here. Full record: `codex-install-tracker.csv`.
 
 | # | Plugin | Category | Account/API | Risk | Installed? | Tested? | Result | Issue found | Next action |
 |---|---|---|---|---|---|---|---|---|---|
@@ -18,6 +18,6 @@
 | 12 | `commit-narrator` | Coding | No | Low | Yes | No | Pending | - | Run test prompt |
 | 13 | `secret-guard` | Security | No | Low | Yes | No | Pending | - | Run test prompt |
 | 14 | `env-lint` | Testing & QA | No | Low | Yes | No | Pending | - | Run test prompt |
-| 15 | `mermaid-js-for-agents` | Diagrams | No | Low | Pending | No | Pending | - | Refresh Codex, install 'mermaid-js-for-agents', then run test prompt |
+| 15 | `mermaid-js-for-agents` | Diagrams | No | Low | Yes | No | Pending | - | Run test prompt |
 
-**Note:** `mermaid-js-for-agents` was renamed from `mermaid` to match its manifest (a marketplace entry name must equal the plugin's manifest name). Install it under the corrected name. See `reports/post-cleanup-next-step.md`.
+**Next:** test the 15 (optional but recommended), then start **Option A** research setup — see `reports/post-cleanup-next-step.md` + `reports/option-a-research-mcp-plan.md`.
