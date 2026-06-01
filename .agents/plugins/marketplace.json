@@ -2135,7 +2135,7 @@
       "category": "Tools & Integrations"
     },
     {
-      "name": "nyldn-img",
+      "name": "img",
       "source": {
         "source": "url",
         "url": "nyldn/img",
@@ -2217,7 +2217,7 @@
       "category": "Research"
     },
     {
-      "name": "papersflow",
+      "name": "papersflow-codex-plugin",
       "source": {
         "source": "git-subdir",
         "url": "hashgraph-online/awesome-codex-plugins",
@@ -2357,7 +2357,7 @@
       "category": "Coding"
     },
     {
-      "name": "bitbucket-cli",
+      "name": "bkt",
       "source": {
         "source": "git-subdir",
         "url": "hashgraph-online/awesome-codex-plugins",
@@ -2371,7 +2371,7 @@
       "category": "Developer Tools"
     },
     {
-      "name": "jenkins-cli",
+      "name": "jk",
       "source": {
         "source": "git-subdir",
         "url": "hashgraph-online/awesome-codex-plugins",
@@ -2427,7 +2427,7 @@
       "category": "Project Management"
     },
     {
-      "name": "project-autopilot",
+      "name": "codex-project-autopilot",
       "source": {
         "source": "git-subdir",
         "url": "hashgraph-online/awesome-codex-plugins",
@@ -2441,7 +2441,7 @@
       "category": "Project Management"
     },
     {
-      "name": "n8n-mcp-synta",
+      "name": "n8n-mcp-synta-codex",
       "source": {
         "source": "git-subdir",
         "url": "hashgraph-online/awesome-codex-plugins",
@@ -2482,7 +2482,7 @@
       "category": "Productivity"
     },
     {
-      "name": "visionos-apps",
+      "name": "build-visionos-apps",
       "source": {
         "source": "git-subdir",
         "url": "studiomeije/visionos-codex-plugin",
@@ -2509,7 +2509,7 @@
       "category": "Image & Video"
     },
     {
-      "name": "comfy-workflow",
+      "name": "comfy-workflow-mcp",
       "source": {
         "source": "url",
         "url": "yaa19212-droid/comfy-workflow-mcp",
@@ -2535,7 +2535,7 @@
       "category": "Computer Vision"
     },
     {
-      "name": "fiftyone",
+      "name": "fiftyone-skills",
       "source": {
         "source": "url",
         "url": "voxel51/fiftyone-skills",
@@ -2548,7 +2548,7 @@
       "category": "Computer Vision"
     },
     {
-      "name": "image-studio",
+      "name": "image-studio-mcp",
       "source": {
         "source": "url",
         "url": "jhupo/image-studio-mcp",
@@ -2561,7 +2561,7 @@
       "category": "Image Generation"
     },
     {
-      "name": "video-vision",
+      "name": "codex-video-vision",
       "source": {
         "source": "url",
         "url": "EyrieCommander/codex-video-vision",
@@ -2574,7 +2574,7 @@
       "category": "Video Review"
     },
     {
-      "name": "enterprise-seo",
+      "name": "enterprise-frontend-seo",
       "source": {
         "source": "url",
         "url": "sasgustav/enterprise-seo-codex-plugin",
@@ -2587,7 +2587,7 @@
       "category": "SEO"
     },
     {
-      "name": "digital-marketing",
+      "name": "digital-marketing-pro",
       "source": {
         "source": "url",
         "url": "indranilbanerjee/digital-marketing-pro",
@@ -2600,7 +2600,7 @@
       "category": "Marketing"
     },
     {
-      "name": "adsense-readiness",
+      "name": "arb",
       "source": {
         "source": "url",
         "url": "huifer/AdSense-Readiness-Benchmark",
@@ -2678,7 +2678,7 @@
       "category": "Database"
     },
     {
-      "name": "clerk",
+      "name": "clerk-skills",
       "source": {
         "source": "url",
         "url": "clerk/skills",
@@ -2730,7 +2730,7 @@
       "category": "Security"
     },
     {
-      "name": "fortify",
+      "name": "fortify-skills",
       "source": {
         "source": "url",
         "url": "fortify/skills",
@@ -2769,7 +2769,7 @@
       "category": "Research"
     },
     {
-      "name": "vibeprospecting",
+      "name": "vpai",
       "source": {
         "source": "url",
         "url": "explorium-ai/vibeprospecting-plugin",
@@ -2808,7 +2808,7 @@
       "category": "Email"
     },
     {
-      "name": "computer-use-windows",
+      "name": "windows-computer-use",
       "source": {
         "source": "url",
         "url": "twh66666/codex-computer-use-for-windows",
@@ -2821,7 +2821,7 @@
       "category": "Browser Automation"
     },
     {
-      "name": "browser-bridge",
+      "name": "browserbridge",
       "source": {
         "source": "url",
         "url": "redvex/browser-bridge",
@@ -2860,7 +2860,7 @@
       "category": "Research"
     },
     {
-      "name": "atlassian-forge",
+      "name": "forge-skills",
       "source": {
         "source": "url",
         "url": "atlassian/forge-skills",
@@ -2873,7 +2873,7 @@
       "category": "Developer Tools"
     },
     {
-      "name": "wshobson-agents",
+      "name": "developer-essentials",
       "source": {
         "source": "git-subdir",
         "url": "wshobson/agents",
@@ -2914,7 +2914,7 @@
       "category": "Spreadsheets"
     },
     {
-      "name": "mermaid",
+      "name": "mermaid-js-for-agents",
       "source": {
         "source": "url",
         "url": "henryennis/mermaid-js-for-agents",
@@ -2953,7 +2953,7 @@
       "category": "Scraping & Research"
     },
     {
-      "name": "stripe-link",
+      "name": "link",
       "source": {
         "source": "url",
         "url": "stripe/link-cli",
@@ -3018,7 +3018,7 @@
       "category": "Research"
     },
     {
-      "name": "n8n-codex",
+      "name": "n8n",
       "source": {
         "source": "url",
         "url": "cuppersatl/n8n-codex-plugin",
@@ -3044,7 +3044,7 @@
       "category": "Agent Orchestration"
     },
     {
-      "name": "burpsuite-bridge",
+      "name": "burpsuite-mcp-bridge",
       "source": {
         "source": "url",
         "url": "6jeffr3y/burpsuite-mcp-bridge",
@@ -3070,7 +3070,7 @@
       "category": "CMS"
     },
     {
-      "name": "couchbase",
+      "name": "couchbase-skills",
       "source": {
         "source": "url",
         "url": "couchbaselabs/agent-skills",
@@ -3083,7 +3083,7 @@
       "category": "Database"
     },
     {
-      "name": "valkey",
+      "name": "valkey-skills",
       "source": {
         "source": "url",
         "url": "avifenesh/valkey-skills",
@@ -3098,8 +3098,9 @@
     {
       "name": "kurrent",
       "source": {
-        "source": "url",
+        "source": "git-subdir",
         "url": "kurrent-io/skills",
+        "path": "plugins/kurrent",
         "ref": "main"
       },
       "policy": {
@@ -3122,7 +3123,7 @@
       "category": "Web Frameworks"
     },
     {
-      "name": "spotify-ads",
+      "name": "spotify-ads-api",
       "source": {
         "source": "url",
         "url": "spotify/ads-agentic-tools",
@@ -3135,7 +3136,7 @@
       "category": "Marketing"
     },
     {
-      "name": "azure-documentdb",
+      "name": "documentdb",
       "source": {
         "source": "url",
         "url": "Azure/documentdb-agent-kit",
@@ -3148,7 +3149,7 @@
       "category": "Database"
     },
     {
-      "name": "zscaler",
+      "name": "zscaler-terraform-skills",
       "source": {
         "source": "url",
         "url": "zscaler/zscaler-terraform-skills",
@@ -3187,7 +3188,7 @@
       "category": "APIs & Communications"
     },
     {
-      "name": "drpc",
+      "name": "drpc-agent-skills",
       "source": {
         "source": "url",
         "url": "drpcorg/drpc-agent-skills",
@@ -3213,7 +3214,7 @@
       "category": "Data & Analytics"
     },
     {
-      "name": "astro",
+      "name": "astro-codex-plugin",
       "source": {
         "source": "url",
         "url": "incluud/astro-codex-plugin",
@@ -3226,7 +3227,7 @@
       "category": "Web Frameworks"
     },
     {
-      "name": "accelerate-wp",
+      "name": "accelerate-ai-toolkit",
       "source": {
         "source": "url",
         "url": "humanmade/accelerate-ai-toolkit",
@@ -3239,7 +3240,7 @@
       "category": "CMS"
     },
     {
-      "name": "tradingview",
+      "name": "tradingview-mcp",
       "source": {
         "source": "url",
         "url": "atilaahmettaner/tradingview-mcp",

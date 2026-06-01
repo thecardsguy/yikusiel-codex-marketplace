@@ -1,16 +1,16 @@
 Plugin,Installed?,Test run?,Passed?,What worked,What failed,Fix needed,Install priority going forward,Keep installed?
-writers-loop,Pending,Pending,Pending,,,,Core (first batch),Pending
-unslop,Pending,Pending,Pending,,,,Core (first batch),Pending
-claude-mem,Pending,Pending,Pending,,,,Core (first batch),Pending
-pm-skills,Pending,Pending,Pending,,,,Core (first batch),Pending
-agentops,Pending,Pending,Pending,,,,Core (first batch),Pending
-session-orchestrator,Pending,Pending,Pending,,,,Core (first batch),Pending
-microsoft-docs,Pending,Pending,Pending,,,,Core (first batch),Pending
-citecheck,Pending,Pending,Pending,,,,Core (first batch),Pending
-github-librarian,Pending,Pending,Pending,,,,Core (first batch),Pending
-codebase-recon,Pending,Pending,Pending,,,,Core (first batch),Pending
-brooks-lint,Pending,Pending,Pending,,,,Core (first batch),Pending
-commit-narrator,Pending,Pending,Pending,,,,Core (first batch),Pending
-secret-guard,Pending,Pending,Pending,,,,Core (first batch),Pending
-env-lint,Pending,Pending,Pending,,,,Core (first batch),Pending
-mermaid,Pending,Pending,Pending,,,,Core (first batch),Pending
+writers-loop,Yes,Pending,Pending,,,,Core (first batch),Yes for now
+unslop,Yes,Pending,Pending,,,,Core (first batch),Yes for now
+claude-mem,Yes,Pending,Pending,,,,Core (first batch),Yes for now
+pm-skills,Yes,Pending,Pending,,,,Core (first batch),Yes for now
+agentops,Yes,Pending,Pending,,,,Core (first batch),Yes for now
+session-orchestrator,Yes,Pending,Pending,,,,Core (first batch),Yes for now
+microsoft-docs,Yes,Pending,Pending,,,,Core (first batch),Yes for now
+citecheck,Yes,Pending,Pending,,,,Core (first batch),Yes for now
+github-librarian,Yes,Pending,Pending,,,,Core (first batch),Yes for now
+codebase-recon,Yes,Pending,Pending,,,,Core (first batch),Yes for now
+brooks-lint,Yes,Pending,Pending,,,,Core (first batch),Yes for now
+commit-narrator,Yes,Pending,Pending,,,,Core (first batch),Yes for now
+secret-guard,Yes,Pending,Pending,,,,Core (first batch),Yes for now
+env-lint,Yes,Pending,Pending,,,,Core (first batch),Yes for now
+mermaid-js-for-agents,Failed (entry renamed -> retry),No,No,,Failed during install: marketplace entry name 'mermaid' did not match plugin manifest name 'mermaid-js-for-agents',FIXED: renamed entry to 'mermaid-js-for-agents'. Refresh Codex and retry installing it under the new name.,Core (first batch),Pending (retry first)
